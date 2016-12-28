@@ -1,0 +1,15 @@
+#archivos de compilacion
+*.toc
+*.log
+*.lof
+*.lot
+*.dvi
+*.aux
+*.blg
+#archivos comprimidos
+*.gz
+
+#archivos de respaldo
+*.bak
+#archivos word
+*.docx

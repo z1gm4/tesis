@@ -1,0 +1,68 @@
+\begin{thebibliography}{10}
+
+\bibitem{NORMAN}
+ABRAMSON, N.
+\newblock The aloha system—another alternative for computer communications.
+
+\bibitem{Abdullah}
+Basuhail, A.~A.
+\newblock Modelling slotted-aloha simulator using computational spreadsheet
+  based e-forms.
+
+\bibitem{use2}
+inteliLIGHT.
+\newblock intelilight lora™ streetlight control solution successfully passes
+  field trials in szada, hungary.
+
+\bibitem{Murat}
+Köksal, M.~M.
+\newblock A survey of network simulators supporting wireless networks.
+
+\bibitem{orange}
+(Orange), N. D.-D. R.-A.~S., and (Actility), O. H.-G. P.-G.~R.
+\newblock {\em LoRa Device Developer Guide}.
+\newblock May 2016.
+
+\bibitem{Juha}
+Petäjäjärvi, J., Mikhaylov, K., Roivainen, A., and Tuomo
+  Hänninen(Centre~for Wireless Communications~DCE, (University of Oulu.
+  Finland).Marko Pettissalo(Nokie Technologies.~Oulu, F.
+\newblock On the coverage of lpwans: Range evaluation and channel attenuation
+  model for lora technology.
+
+\bibitem{simubook}
+Pidd, M.
+\newblock {\em Computer Simulation in Management Science}.
+\newblock Department of Operational Research- University of Lancaster.
+
+\bibitem{use1}
+SEMTECH.
+\newblock Smart industrial control.
+
+\bibitem{modulation}
+SEMTECH.
+\newblock Lora™ modulation basics, 2015.
+
+\bibitem{Sornin2}
+(Semtech), N.~S., (Semtech), M.~L., (IBM), T.~E., and (IBM)., T.~K.
+\newblock Lora mac specification.
+
+\bibitem{Sornin}
+(Semtech), N.~S., (Semtech), M.~L., (IBM), T.~E., (IBM), T.~K., and (Actility),
+  O.
+\newblock Lorawan specification.
+
+\bibitem{simubook2}
+Tarifa, E.~E.
+\newblock {\em Teoría de Modelos y Simulación}.
+\newblock Facultad de Ingeniería - Universidad Nacional de Jujuy.
+
+\bibitem{Omnet++}
+Varga, A.
+\newblock Omnet++ simulation manual, 2016.
+
+\bibitem{Xavier}
+Vilajosana, X., de~Catalunya), P. T.-P.~O., and of~Barcelona), B. M.~U.
+\newblock Understanding the limits of lorawan.
+
+\end{thebibliography}

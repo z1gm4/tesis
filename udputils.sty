@@ -1,0 +1,361 @@
+%
+% Get the latest version and more at
+% http://weblogs.udp.cl/carlos.fernandez/archivos/
+%
+% class file: udputils.sty
+%
+% Carlos Fernandez, January 1, 2006.
+% cfernandezj@gmail.com
+%
+%
+% =====================================================================
+% Identification
+% ---------------------------------------------------------------------
+                                           %
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]       % We need LaTeX2e or better
+                                           %
+\ProvidesPackage{udputils}[2006/01/27 v1.0 LaTeX2e udp commands style]
+                                           %
+% =====================================================================
+% Basic commands (before options)
+% ---------------------------------------------------------------------
+                                           %
+\RequirePackage{ifthen}                    % we need ifthenelse
+% \newboolean are false by default         %
+                                           %
+\RequirePackage{verbatim}                  %
+\RequirePackage{url}                       % internet url
+                                           %
+% =====================================================================
+% Options for the class
+% ---------------------------------------------------------------------
+                                           %
+\DeclareOption*{                           % unknown options
+  \PackageError{udputils}{                 %
+    Unknown option [\CurrentOption].       %
+  }{                                       %
+    Delete option [\CurrentOption].        %
+  }                                        %
+}                                          %
+                                           %
+% =====================================================================
+% Process options
+% ---------------------------------------------------------------------
+                                           %
+\ProcessOptions\relax                      %
+                                           %
+% =====================================================================
+% Commands for the whole document
+% ---------------------------------------------------------------------
+                                           %
+% ---------------------------------------------------------------------
+% for two sides printings
+%\@twosidetrue                              %
+%\@mparswitchtrue                           %
+                                           %
+%\@twocolumnfalse                           %
+                                           %
+%\widowpenalty 150                          % orphans lines
+                                           %
+% =====================================================================
+% Definition of new environment and commands
+% ---------------------------------------------------------------------
+                                           %
+% ---------------------------------------------------------------------
+% Parameters for a list
+%
+% \topsep amount of extra vertical space at top of list
+% \partopsep extra length at top if environment is prececed
+%     by a blank line (it should be a rubber length)
+% \itemsep amount of extra vertical space between items
+% \parsep amount of vertical space between paragraphs within an item
+% \leftmargin horizontal distance between the left margins
+%     of the environment and the list; must be nonnegative
+% \rightmargin horizontal distance betwen the right margins
+%     of the enviroment and the list; must be nonnegative
+% \listparindent amount of extra space for paragraph indent
+%     after the first in an item; can be negative
+% \itemindent indentation of first line of an item; can be negative
+% \labelsep separation between end of the box containing the label
+%     and the text of the first line of an item
+% \labelwidth normal width of the box containing the label;
+%     if the actual label is bigger, the natural width is used,
+%     extending into the space for the first line of the item's text
+% \makelabel{label} generates the label printed by the \item command                                           %
+                                           %
+\newenvironment{blist}{                    %
+  \begin{list}                             % stuff for before my list items
+  {
+    \bfseries\upshape $\bullet$
+  }
+  {
+    \setlength{\labelwidth}{.05in}
+    \setlength{\leftmargin}{.35in}
+    \setlength{\labelsep}{.1in}
+    \setlength{\rightmargin}{0cm}
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{4pt}
+    \setlength{\itemsep}{-2pt}
+  }
+}{     %end of before-stuff
+  \end{list} %stuff for after my list items
+}
+                                           %
+% The compactlist environment has \parskip set to the original \parskip
+                                           %
+\let\origparskip=\parskip                  %
+                                           %
+\newenvironment{compactlist}{              %
+  \begin{list}{}                           %
+  {                                        %
+    \setlength{\parsep}{0pt}               %
+    \setlength{\itemsep}{0pt}              %
+  }                                        %
+}{                                         %
+  \end{list}                               %
+}                                          %
+                                           %
+% ---------------------------------------------------------------------
+                                           %
+\newcommand*{\symbologylistlabel}[1]{      %
+  \hspace\labelsep                         %
+  \normalfont\bfseries#1                   %
+}                                          %
+                                           %
+\newenvironment{oldsymbologylist}{         %
+  \begin{list}                             % \list{label}{spacing}
+  {}                                       %
+  {                                        %
+    \setlength{\topsep}{0pt}               %
+    \setlength{\parsep}{0pt}               %
+    \setlength{\leftmargin}{6em}           %\parindent plus 0pt} % 6em}
+    \setlength{\itemindent}{0pt} %-\parindent plus 0pt}
+%    \setlength{\labelwidth}{4em}           %
+    \let\makelabel\symbologylistlabel      % redefine makelabel
+  }                                        %
+}{                                         %
+  \end{list}                               %
+}                                          %
+                                           %
+% ---------------------------------------------------------------------
+                                           %
+\newcommand{\boxit}[1]{                    %
+  \vbox{                                   %
+    \hrule                                 %
+    \hbox{                                 %
+      \vrule\kern3pt                       %
+      \vbox{                               %
+        \kern3pt#1\kern3pt                 %
+      }                                    %
+      \kern3pt\vrule                       %
+    }                                      %
+    \hrule                                 %
+  }                                        %
+}                                          %
+                                           %
+\def\Box{\boxit{\null}}                    %
+                                           %
+% The proof environment.  For proofs that don't start with ``Proof:''
+% use the proofarg environment with the desired start as argument
+                                           %
+\newenvironment{proof}{                    %
+  \trivlist\item[]\emph{Demostración}:     %
+}{                                         %
+  \unskip\nobreak\hskip 1em plus 1fil      %
+  \nobreak                                 %
+  \parfillskip=0pt                         %
+  \endtrivlist                             %
+}                                          %
+                                           %
+% ---------------------------------------------------------------------
+                                           %
+\newcommand{\udp@bs}{\symbol{92}}          % print a backslash
+\newcommand{\udp@bsa}{\symbol{'134}}       %
+                                           %
+% ---------------------------------------------------------------------
+                                           %
+\newcommand{\cih}[1]                       %
+  {\index{instrucciones!#1@\texttt{\udp@bs#1}}  %
+  \index{#1@\texttt{\hspace*{-1.2ex}\udp@bs #1}}%
+}                                          %
+                                           %
+\newcommand{\ci}[1]                        % write a latex command
+%  {\cih{#1}\texttt{\udp@bs#1}}             % index and bold
+  {\texttt{\udp@bs#1}}                     % bold
+                                           %
+\newcommand{\Cmd}[1]{                      %
+  \texttt{\def\{{\char`\{}\def\}{\char`\}}\udp@bsa#1}}
+                                           %
+\newcommand{\CmdIndex}[1]{                 %
+  \index{#1@\texttt{\bs#1}}}               %
+                                           %
+\newwrite\example@out                      %
+                                           %
+% ---------------------------------------------------------------------
+                                           %
+\newenvironment{example}                   %
+{                                          %
+  \singlespacing                           %
+  \begingroup                              % Lets Keep the Changes Local
+  \@bsphack                                %
+  \immediate\openout \example@out \jobname.exa
+  \let\do\@makeother\dospecials\catcode`\^^M\active
+  \def\verbatim@processline{               %
+    \immediate\write\example@out{\the\verbatim@line}
+  }                                        %
+  \verbatim@start                          %
+}{                                         %
+  \immediate\closeout\example@out\@esphack %
+  \endgroup                                %
+                                           %
+% Y aquí lo que se ha añadido              %
+                                           %
+  \par\small\addvspace{3ex plus 1ex}       %
+  \vskip -\parskip                         %
+  \noindent                                %
+  \makebox[0.495\textwidth][l]{            %
+    \begin{minipage}[t]{0.45\textwidth}    %
+      \vspace*{-1ex}                       %
+      \verbatiminput{\jobname.exa}         %
+    \end{minipage}                         %
+  }                                        %
+  \hfill                                   %
+  \makebox[0.495\textwidth][l]{            %
+    \begin{minipage}[t]{0.5\textwidth}     %
+      \vspace*{-2ex}                       %
+      \setlength{\parindent}{0pt}          %
+      \setlength{\parskip}                 %
+        {1ex plus 0.4ex minus 0.2ex}       %
+      {                                    %
+        \udp@raggedright                   % added by cif
+        \begin{trivlist}                   %
+          \item\input{\jobname.exa}        %
+        \end{trivlist}                     %
+      }                                    %
+    \end{minipage}                         %
+  }                                        %
+  \par\addvspace{3ex plus 1ex}             %
+  \vskip -\parskip                         %
+}                                          %
+                                           %
+% ---------------------------------------------------------------------
+% redefine verbatim
+% - singlespacing
+                                           %
+\let\old@verbatim=\verbatim                % old definition
+\let\old@endverbatim=\endverbatim          %
+                                           %
+\renewenvironment{verbatim}{               %
+  \singlespacing                           %
+  \old@verbatim                            %
+}{                                         %
+  \old@endverbatim                         %
+}                                          %
+                                           %
+% ---------------------------------------------------------------------
+% Redefine lists
+% ---------------------------------------------------------------------
+                                           %
+% ---------------------------------------------------------------------
+% redefine itemize
+                                           %
+\let\old@itemize=\itemize                  % old definition
+\let\old@enditemize=\enditemize            %
+                                           %
+\renewenvironment{itemize}{                %
+  \old@itemize                             %
+}{                                         %
+  \old@enditemize                          %
+}                                          %
+                                           %
+% ---------------------------------------------------------------------
+% redefine enumerate
+                                           %
+\let\old@enumerate=\enumerate              % old definition
+\let\old@endenumerate=\endenumerate        %
+                                           %
+\renewenvironment{enumerate}{              %
+  \old@enumerate                           %
+}{                                         %
+  \old@endenumerate                        %
+}                                          %
+                                           %
+% ---------------------------------------------------------------------
+% redefine description
+                                           %
+\let\old@description=\description          % old definition
+\let\old@enddescription=\enddescription    %
+                                           %
+\renewenvironment{description}{            %
+  \old@description                         %
+}{                                         %
+  \old@enddescription                      %
+}                                          %
+                                           %
+% ---------------------------------------------------------------------
+% define udpdescription
+                                           %
+\newenvironment{udpdescription}{           %
+  \begin{list}                             % symbols list
+  {}                                       %
+  {                                        %
+    \setlength{\leftmargin}{\udp@indent}   %
+    \setlength{\itemindent}{-\udp@indent}  %
+    \setlength{\labelwidth}{0pt}           %
+    \setlength{\itemsep}{0pt}              %
+    \setlength{\parsep}{0pt}               %
+    \setlength{\partopsep}{0pt}            %
+    \setlength{\topsep}{0pt}               %
+    \setlength{\labelsep}{1ex}             %
+%    \let\makelabel\descriptionlabel        % use description-list label
+  }                                        %
+}{                                         %
+  \end{list}                               %
+}                                          %
+                                           %
+% ---------------------------------------------------------------------
+                                           %
+\newenvironment{code}                      %
+{                                          %
+%  \singlespace
+  \begin{quote}                            %
+}{                                         %
+  \end{quote}                              %
+}                                          %
+                                           %
+% ---------------------------------------------------------------------
+                                           %
+\newenvironment{citatexto}{                %
+  \begin{center}                           %
+    \begin{minipage}[t]{0.85\textwidth}    %
+      \let\\\@centercr\@rightskip\z@ plus .1\hsize
+      \rightskip\@rightskip                %
+      \leftskip\z@skip                     %
+      \sl                                  %
+}{                                         %
+    \end{minipage}                         %
+  \end{center}                             %
+}                                          %
+                                           %
+% ---------------------------------------------------------------------
+                                           %
+\newenvironment{command}                   %
+{                                          %
+  \nopagebreak\par\small                   %
+  \addvspace{3.2ex plus 0.8ex minus 0.2ex} %
+  \vskip -\parskip                         %
+  \noindent                                %
+  \begin{tabular}{|l|}                     %
+    \hline\rule{0pt}{1em}\ignorespaces     %
+}{                                         %
+    \\\hline                               %
+  \end{tabular}                            %
+  \par\nopagebreak                         %
+  \addvspace{3.2ex plus 0.8ex minus 0.2ex} %
+  \vskip -\parskip                         %
+}                                          %
+                                           %
+% =====================================================================
+% other commands for the whole document
+%
+\endinput

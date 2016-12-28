@@ -1,0 +1,8 @@
+\chapter{Pruebas de Verificación de Módulo de Transición LoRaWAN/IPv6}
+Para probar el módulo de verificación se pensó en un momento el desarrollar una aplicación web que mostrara de forma clara de que el módulo había enviado datos hacia la API de la aplicación web, y había almacenado dicha información en una Base de datos para su posterior análisis. Pero dados los problemas de conectividad, y el tiempo invertido en intentar solventar esta carencia, se decidió el realizar pruebas de inserción a una base de datos local pero a través del uso de un Socket en C. Este Socket será el encargado de transmitir la información al Back-end de la aplicación usando la API de MySQL para conectarse como cliente.
+\section{Elementos usados}
+Para esta medición sólo se usaron reglas en iptables para realizar un puente entre la interfaz ethernet (conectado a Gateway) esto junto a una query a la base de datos. Si esta query es exitosa, es prueba suficiente de que es posible enviar datos hacia afuera de la red LoRa de forma local, y además permite dar un nuevo enfoque a las aplicaciones Web, al censo de datos y a como integrar estos versátiles dispositivos en e
+\section{Configuración de Pruebas}
+Para las pruebas, se dispuso a configurar el servidor MySQL 
+\section{Resultados Obtenidos}
+coming soon ;)

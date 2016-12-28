@@ -1,0 +1,180 @@
+%
+% ---------------------------------------------------------------
+% template para escribir tesis/memorias en
+% la Universidad Diego Portales
+% ---------------------------------------------------------------
+%
+\documentclass[thesis,final,oneside]{udpbook}
+%
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{ucs}
+%\usepackage[latin1]{inputenc}    % esto NO es portable
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\selectlanguage{spanish}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{scrextend}
+\usepackage{textcomp}
+\usepackage{ragged2e}
+\usepackage{hyphenat}
+
+
+%
+% ----------------------------------------------------------------
+% defina su escuela
+%
+\udpEscuela{Escuela de Informática y Telecomunicaciones}{Facultad de Ingeniería}
+%
+% ---------------------------------------------------------------
+% Comienzo del documento
+% ---------------------------------------------------------------
+\begin{document}
+\frontmatter
+%
+% ----------------------------------------------------------------
+% pagina de titulo
+% ----------------------------------------------------------------
+%
+
+\begin{titlepage}                       
+ \title{Diseño y Evaluación de simulador de dispositivos LoRaWAN Gateway junto a la implementación de un sistema de transición a IPv6}       % Titulo del documento
+\author{Víctor Manríquez Gallegos}               % Ej.: Juan I. Perez
+\degreedoc{Memoria}{título}{Ingeniero Civil con mención en Informática y Telecomunicaciones} %
+\date{Fecha de la defensa}              % (Ej: Enero, 2006)
+\chairperson{Prof. Diego Dujovne}      %
+\committee{Prof. José Pérez\\ Prof. Nicolás Boettcher}    % separados por \\
+\end{titlepage}                         %
+%
+% ----------------------------------------------------------------
+% pagina de firmas
+% ----------------------------------------------------------------
+% (maximo seis firmas)
+%
+\begin{signaturepage}                   %
+\approval{Prof. Diego Dujovne\\Profesor guía}        %
+\approvaldouble{Prof. José Pérez\\Comité}{Prof. Nicolás Boettcher\\Comité}%
+\end{signaturepage}                     %
+%
+% ----------------------------------------------------------------
+% pagina dedicatoria
+% ----------------------------------------------------------------
+% separadas por \\ si es mas de una linea
+%
+\begin{dedicatory}                      %
+Esta memoria es dedicada a mis padres por darme todo,\\
+a mi hijo para que sepa que el esfuerzo deja recompensas,\\
+y a mi pareja y compañera de vida Patricia, por estar ahora y siempre...\\             %
+\end{dedicatory}                        %
+%
+% ----------------------------------------------------------------
+% Indices de materia, figuras y tablas
+% ----------------------------------------------------------------
+% paginas de contenido (indice de materias), lista de figuras
+% y lista de tablas.
+%
+\tableofcontents                        % tabla de contenido
+\listoffigures                          % �ndice de figuras
+\listoftables                           % �ndice de tablas
+%
+% ----------------------------------------------------------------
+% pagina de agradecimientos
+% ----------------------------------------------------------------
+%
+\begin{acknowledgment}                  %
+Les agradezco a todos quienes me tendieron una mano, me regalaron una sonrisa o una palabra de apoyo,
+a mis profesores más cercanos que siempre fueron buenos mentores, por siempre darme una palabra de aliento y de muchas veces darme buenas ideas para avanzar,
+a mis amigos cercanos, a mis hermanos por apoyarme siempre, a mis padres por ser siempre lo mejor que han podido ser, a mi precioso hijo que siempre sabe como hacerme feliz, y a mi compañera de vida Patricia que siempre está a mi lado para soñar, cuidar y amar.
+\end{acknowledgment}                    %
+%
+% ----------------------------------------------------------------
+% pagina de abstract
+% ----------------------------------------------------------------
+%
+\begin{abstract}                        %
+The main objective of this degree project is to develop a simulation model that allows represent the behavior of the physical layer of the LoRa embedded devices, besides to a LoRaWAN/IPv6 transition module.\\
+Among the specific objectives is to implement this simulation model by means of using the discretes events simulation software OMNET ++ that will be developed in a modular way in the C++ programming language. This application of the simulation model aims to evaluate, verify and investigate the large variety of uses, distributions and possibles configurations to use with the LoRa devices in a virtual environment, without the inherent needs of monetary cost by adquisition, time , installation and the later implementation of a LoRa devices network with the features desired.\\
+In regards to the LoRaWAN/IPv6 translation module, it intends to develop with the objective of mapping the LoRaWAN network, and to get a complete knowledge of sent messages by every single node in the network, improving the debugging and trace capability on the LoRa network, together to a large number of uses at WEB application level that are out of the project scope.\\
+About the scope of this project, it aims to simulate just the operations that are comprehended in the physical layer of the LoRa devices by means of the creation of events and entities which together will represent the behavior of this devices. To  verify the validity of the simulation model, tests will be generated for both, in the virtual environment (simulation) like to in the real environment with adaptive conditions to generate equivalent environments, and in this way define a range of error to the simulation model where will realize adjustment if it possible until the defined sensibility level like valid.\\
+In brief, the resultant product of this degree project, it is the simulation model of the LoRa devices, that will be compound for reusable and scalable modules, they will be useful into another studies or investigations, that besides they will be able to minimize and help with activities like design and verification of the behavior of this devices. Likewise, it is expected the integration of the LoRaWAN/IPv6 translation module in this simulation model in order to give the integration capability of IoT (``\textit{Internet of Things}'') in this devices.
+\end{abstract}                          %
+%
+% ----------------------------------------------------------------
+% pagina de resumen
+% ----------------------------------------------------------------
+%
+\begin{resumen}                         %
+El objetivo general de esta memoria de título es desarrollar un modelo de simulación que permita representar el comportamiento de la capa física de los dispositivos embebidos LoRa junto a un módulo de transición del protocolo LoRaWAN a IPv6. 
+Entre los objetivos específicos, está implementar este modelo de simulación,  mediante el uso del software de simulación de eventos discretos OMNET ++, el que se desarrollará de forma modular en el lenguaje C++. Esta aplicación del modelo de simulación tiene como objetivo el poder evaluar, verificar e investigar los distintos usos, distribuciones y configuraciones posibles a usar con los dispositivos LoRa en un ambiente virtual, sin necesidad de los gastos inherentes en tiempo y coste monetario a la adquisición, instalación y posterior implementación de una red de dispositivos LoRa con las características deseadas.\\
+
+Con respecto al módulo de transición del protocolo LoRaWAN al protocolo IPv6, este se pretende desarrollar con el objetivo de poder  mapear una red de LoRaWAN, y obtener total conocimiento de los mensajes enviados desde cada nodo de la red, aumentando la capacidad de traza y depuración sobre la red LoRa, junto con un gran cantidad de usos a nivel de aplicación web, los cuales no están dentro de los alcances de este proyecto.\\
+Sobre los alcances del proyecto, se pretende poder simular sólo el funcionamiento que comprende la capa física de los dispositivos LoRa, mediante la creación de entidades y eventos que en su conjunto
+representarán el comportamiento de estos dispositivos. Para verificar su validez como modelo de simulación, se generarán pruebas tanto en el entorno virtual (simulador), como en un entorno real con condiciones adaptadas para generar ambientes equivalentes, y de esta forma determinar un margen de error del modelo de simulación, donde se realizarán ajustes, si es posible, al nivel de sensibilidad definido como válido.\\
+
+En resumen, el producto resultante de este proyecto de título, será un modelo de simulación de los dispositivos LoRa, el cual estará compuesto por módulos reutilizables y escalables útiles en otros estudios o investigaciones, que además podrá minimizar y ayudar con actividades como el diseño y verificación del comportamiento de estos dispositivos. Asimismo se espera la integración del módulo de transición de LoRaWAN a IPv6 en este modelo de simulación con el fin de otorgar la capacidad de integrar el IoT(``\textit{Internet of Things}'' en estos dispositivos.
+
+\end{resumen}                           %
+%
+% ----------------------------------------------------------------
+% Fin de las paginas iniciales
+% ----------------------------------------------------------------
+%
+\cleardoublepage                        %
+\mainmatter                             %
+                                        %
+% ----------------------------------------------------------------
+% Cap�tulos y secciones del documento
+% ----------------------------------------------------------------
+% aca se incluyen los archivos con el texto de los capitulos
+% (Ej.: cha-intro.tex es el archivo con un capitulo)
+%
+\sloppy
+\input{capitulos/introduccion}
+\input{capitulos/estadodelarte}
+\input{capitulos/fundamentosteoricosymetodos}
+\input{capitulos/resultados}
+\input{capitulos/concluyanalisis}
+% ... mas archivos de capitulos
+%
+% ---------------------------------------------------------------
+% Bibliograf�a
+% ---------------------------------------------------------------
+% tubiblio.bib es el archivo con la base de datos bibliografica
+%
+% El estilo por defecto es IEEE Transactions
+\bibliographystyle{IEEEtran}
+% Acá puede incluir uno más archivos de referencia
+\bibliography{IEEEabrv,referencias}
+\putbibliography{tubiblio}
+
+%
+% ---------------------------------------------------------------
+% Simbolog�a y glosario
+% ---------------------------------------------------------------
+% simbolos.tex es el archivo de simbolos (y glosario)
+%
+%\begin{symbology}
+%\input{simbolos}  % archivo propio de simbolos
+%\end{symbology}
+%
+% ---------------------------------------------------------------
+% Anexos
+% ---------------------------------------------------------------
+\appendix
+%
+% aca se incluyen los archivos con el texto de los anexos
+% (Ej.: anx-uno.tex es el archivo de un anexo)
+%
+
+\input{capitulos/anexoa}
+\input{capitulos/anexob}
+\input{capitulos/anexoc}
+% ... mas archivos de anexos
+%
+% ---------------------------------------------------------------
+% Fin del documento
+% NO ESCRIBIR DESPU�S DE ESTA LINEA
+\backmatter
+\end{document}
+% ---------------------------------------------------------------

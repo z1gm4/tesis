@@ -1,0 +1,16 @@
+PING bbbb::3(bbbb::3) 10 data bytes
+18 bytes from bbbb::3: icmp_seq=65 ttl=64 time=201 ms
+18 bytes from bbbb::3: icmp_seq=168 ttl=64 time=201 ms
+18 bytes from bbbb::3: icmp_seq=442 ttl=64 time=201 ms
+18 bytes from bbbb::3: icmp_seq=446 ttl=64 time=201 ms
+18 bytes from bbbb::3: icmp_seq=448 ttl=64 time=201 ms
+18 bytes from bbbb::3: icmp_seq=449 ttl=64 time=201 ms
+18 bytes from bbbb::3: icmp_seq=450 ttl=64 time=201 ms
+18 bytes from bbbb::3: icmp_seq=557 ttl=64 time=201 ms
+18 bytes from bbbb::3: icmp_seq=725 ttl=64 time=201 ms
+18 bytes from bbbb::3: icmp_seq=893 ttl=64 time=201 ms
+18 bytes from bbbb::3: icmp_seq=894 ttl=64 time=201 ms
+
+--- bbbb::3 ping statistics ---
+898 packets transmitted, 11 received, 98% packet loss, time 406629ms
+rtt min/avg/max/mdev = 201.350/201.629/201.983/0.501 ms

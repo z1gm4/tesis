@@ -1,0 +1,50 @@
+\begin{justify}
+\chapter{Introducción}
+
+Para todo proyecto las etapas de diseño, desarrollo, comprobación y verificación de los procesos son el pilar fundamental para obtener buenos resultados, y que estos posean una calidad asociada. Lo mismo ocurre en los proyectos de automatización, campo en que las empresas están invirtiendo cada vez más, con el fin de simplificar tareas complejas para reducir los tiempos y costos de ejecución de actividades sin perder la calidad de los resultados y/o productos adjuntos al proceso en cuestión. En este contexto la industria TI se ha visto empujada a investigar en el desarrollo de entornos virtuales, para evaluar rendimientos y comparar comportamientos y componentes, sin necesidad de implementar un ambiente sobre la base de dispositivos físicos. Así pues, estas plataformas virtuales o simuladas son capaces de cumplir dos propósitos fundamentales:\\
+\begin{itemize}
+\item Comparar diferentes diseños de los sistemas a simular, con el objetivo de analizar las distintas alternativas posibles para elegir la más idónea para la solución planteada.
+\item Verificar errores de distribución, configuración o de factibilidad física ( en el caso de una simulación física de dispositivos) en los entornos virtuales. Esta particular característica agrega una ventaja comparativa, dado que es posible detectar errores y solucionarlos, previo a la implementación de un sistema, minimizando de esta forma la posibilidad de fallos, mejorando de forma sustancial el producto o sistema resultante.
+\end{itemize}
+Esta memoria de título se centra en la necesidad de la industria y de la comunidad TI en desarrollar simuladores de dispositivos LoRa, junto a la implementación de un módulo de transición de LoRaWAN a IPv6, con el fin de darle más versatilidad a dispositivos embebidos de esta naturaleza. Este modelo de simulación descansa en el diseño e implementación de un prototipo sobre la base del protocolo ALOHAnet, para determinar la factibilidad de la transición del protocolo LoRaWAN a IPv6.
+
+\section{Motivación y Antecedentes}
+En la actualidad no existe ninguna herramienta que permita evaluar el diseño de una red de dispositivos LoRa ~\cite{Sornin}~\cite{Sornin2}, por lo que si se desea implementar una red de estos dispositivos para medir datos, monitorear o para la investigación sobre sus capacidades, es necesario adquirir los componentes físicos necesarios(Hardware), construir físicamente la red y realizar pruebas sobre este ambiente real. Así pues, se debe realizar una inversión de dinero y tiempo para implementar la red y evaluarla según los parámetros deseados, lo que aumenta de forma exponencial, dependiendo de la escala del proyecto o del alcance de este.\\
+Sin embargo, es posible reducir este coste asociado, utilizando herramientas de simulación de redes LoRa, que presenten una mejora en los diseños de las redes, optimizar recursos(dinero y tiempo) y al mismo tiempo generar un estudio de las limitaciones del sistema, para, corregir posibles errores o establecer margenes de sensibilidad aceptables para el desarrollo de proyectos que incluyan esta tecnología~\cite{Xavier}.\\ 
+Para realizar este proyecto se propone el uso del software de simulación de redes OMNET ++ ~\cite{Omnet++}, el cual es un paquete de simulación de eventos discretos sobe la base de C++. Este software está diseñado para funcionar de forma modular y es completamente programable, lo que permite desarrollar modelos de componentes reutilizables y escalables. Además es posible una sencilla traza y depuración de los modelos simulados mediante el uso de su interfaz gráfica , el que entrega gráficos y representaciones animadas del flujo de los mensajes.\\
+
+En cuanto a las referencias bibliográficas a usar para llevar a cabo el desarrollo de este proyecto, se usarán diferentes referencias relacionadas con cada área del proyecto, las cuales son: 
+\begin{itemize}
+\item Diseño y desarrollo del simulador de dispositivos LoRa
+\item Desarrollo e implementación de módulo de transición LoRaWAN/IPv6
+\end{itemize}
+\subsection{Diseño y desarrollo del simulador de dispositivos LoRa}
+En el caso del diseño y desarrollo del simulador de los dispositivos LoRa, se utilizará la especificación de LoRaWAN otorgada por Semtech junto a la documentación de OMNET++ ~\cite{Sornin}~\cite{Sornin2}, referencias que entregarán las especificaciones técnicas necesarias para  desarrollar un modelo de simulación de dispositivos LoRa sobre la base del modelo de simulación del protocolo ALOHA dado que  LoRaWAN fue desarrollado sobre la base de ALOHA~\cite{Sornin}~\cite{Abdullah}~\cite{NORMAN}. 
+\subsection{Desarrollo e implementación de módulo de transición LoRaWAN/IPv6} 
+Para el caso del desarrollo e implementación del módulo de transición LoRaWAN/IPv6, se requerirá estudiar las distintas investigaciones realizadas en la actualidad con el fin de obtener un punto de referencia para el desarrollo de la transición entre protocolos y madurar el conocimiento sobre los que se usarán y además comprenden como  componer paquetes de datos para el envío de información de una fuente a otra~\cite{Juha}.
+
+\section{Objetivos y Alcance}
+A continuación se exponen los objetivos generales de este proyecto:\\
+\begin{itemize}
+\item Diseñar y desarrollar un modelo de simulación funcional para dispositivos Gateway LoRaWAN
+\item Diseñar, integrar e implementar un módulo que permita la transición de LoRaWAN hacia los protocolos TCP/IP o UDP/IP.
+\end{itemize}
+Con respecto a los objetivos específicos que se esperan con este trabajo, se tienen:\
+\begin{itemize}
+\item Diseñar y desarrollar un modelo de simulación de un Gateway LoRaque, que posea la capacidad de establecer comunicación con nodos, es decir, que tenga la capacidad de enviar, recibir y retransmitir paquetes hacia los nodos.
+\item Generar conjuntos de pruebas, tanto teóricas (basadas en especificaciones del fabricante, como en teorías de telecomunicaciones) como pruebas empíricas (pruebas realizadas con dispositivos reales, simulando condiciones similares a las simuladas), con el fin de contrastar resultados y demostrar la precisión del simulador.
+\item Documentar todo resultado obtenido de cada una de estas pruebas mencionadas, para evidenciar el funcionamiento de este modelo de simulación a fin de tener un respaldo y constatar su validez o revelar la diferencia con el modelo teórico y para realizar los ajustes pertinentes al modelo.
+\item Diseñar y desarrollar un módulo de transición de los paquetes transmitidos desde LoRaWAN hacia IPv6, el que dará la capacidad al Gateway de transmitir directamente hacia una aplicación o servicio de red.
+\item Verificar el módulo de transición LoRaWAN/IPv6, desarrollando un servicio de red básico ( como una REST API, comunicación con Base de datos, o similar) para probar la funcionalidad de la transición de mensajes desde LoRaWAN a IPv6 con la finalidad de demostrar tanto que la disección del paquete LoRaWAN fue exitosa, como que la creación del esqueleto del paquete TCP/IPv6 junto con la transmisión de los datos deseados tuvo éxito.
+\end{itemize}
+Acerca de la metodología definida para este proyecto, en una primera fase se ha de definir la bibliografía requerida para obtener los conocimientos suficientes para completar los objetivos de este proyecto.\\
+Una vez recabada la información necesaria, proveniente de la bibliografía seleccionada, se procederá al desarrollo del simulador del Gateway de LoRaWAN, el que irá acompañado de una serie de pruebas para las funcionalidades desarrolladas, las cuales son:\\
+\begin{itemize}
+\item Comprobar el efecto captura en los paquetes enviados por nodos cercanos. 
+\item Verificar la existencia de paquetes de error y sincronización correspondiente.
+\item Verificar capacidad de simulador (en términos estadísticos), el que luego se contrastará con un experimento con los dispositivos reales.
+\item Generar pruebas de comunicación con los nodos, junto a pruebas de retransmisión de paquetes enviados por los nodos.Junto con su contraste correspondiente con los dispositivos físicos.
+\item Generar pruebas a módulo de transición a IPv6, el que se contrastará con la correcta recepción de datos en aplicativo con enfoque de red básico (p.e:Base de Datos) para recepción de datos.
+\end{itemize}
+Ya terminado el simulador y realizadas las pruebas de funcionalidad con éxito, se escribirá el módulo de transición de LoRaWAN a TCP/IP y UDP/IP posterior a su desarrollo, se procederá a su integración al Gateway LoRaWAN simulado, mientras de forma simultánea se desarrollan pruebas funcionales al módulo de transición para asegurar su correcto funcionamiento.
+\end{justify}

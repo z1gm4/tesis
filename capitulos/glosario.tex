@@ -1,0 +1,15 @@
+%%glosario%%%
+%definicion de terminos
+%%glosario
+\newglossaryentry{iotg}{name={Internet of Things}, description={IoT es el término usado en ciencias de la computación, para referirse a la integración de los protocolos IPv4 o IPv6, en dispositivos que no fueron inicialmente diseñados para realizar una conectividad mediante el uso de Internet, esto se realiza con el fin de poder ampliar la diversidad de usos y aplicaciones que pueden llegar a tener dispositivos de esta naturaleza}}
+
+\newglossaryentry{lpwang}{name={LPWAN}, description={Las LPWAN, son todas aquellas redes inalámbricas, diseñadas para permitir comunicaciones de largo alcance a una baja tasa de envío de bits}}
+
+\newglossaryentry{lorawang}{name={LoRaWAN}, description={LoRaWAN, es el protocolo utilizado en las redes LPWAN de la familia de los LoRa, el que tiene la cualidad de optimizar el funcionamiento de ALOHAnet utilizando una programación de mensajes en base al tiempo, y junto con esto, el uso de multi canales de comunicación para evitar colisiones y asegurar una conectividad con el menor grado de pérdidas. Aunque, también este acrónimo es utilizado para hacer referencia a las redes LPWAN de la familia de los LoRa}}
+
+%%acrónimos
+\newglossaryentry{iot}{type=\acronymtype,  name={IoT}, description={\textit{Internet of Things}}, first={IoT(\textit{Internet of Things})\glsadd{iotg}}, see=[Glosario:]{iotg}}
+
+\newglossaryentry{lorawan}{type=\acronymtype,  name={LoRaWAN}, description={\textit{Long Range Wide-Area Network}}, first={LoRaWAN(\textit{Long Range Wide-Area Network})\glsadd{lorawang}}, see=[Glosario:]{lorawang}}
+
+\newglossaryentry{lpwan}{type=\acronymtype,  name={LPWAN}, description={\textit{Low Power Wide-Area Network}}, first={LPWAN(\textit{Low Power Wide-Area Network})\glsadd{lpwang}},  see=[Glosario:]{lpwang}}

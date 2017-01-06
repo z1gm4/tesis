@@ -36,17 +36,30 @@
 \renewcommand\thesubtable{(\Alph{subtable})}
 \newcommand{\subfigureautorefname}{\figureautorefname}
 \usepackage{cite}
-
+\usepackage{relsize}
 % Un paquete para generar texto. REMUEVA ESTE PAQUETE AL UTILIZAR ESTA PLANTILLA.
 \usepackage{blindtext}
+%%glosario
+%%%comandos para acronimos y unidades
+%%acronimos
+%\usepackage{acronym}
+\usepackage[acronym,xindy,toc,section=chapter]{glossaries}
+\makeglossaries
 
+%definicion de terminos
+%
+\loadglsentries{capitulos/glosario}
+
+
+%%c++ y omnet++
+\newcommand\CC{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
+\newcommand\OMNET{OMNET\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
 
 % Establecemos el tema a utilizar. 
 % Debe existir el archivo udpthesisEIT.sty en su sistema TeX para poder utilizarlo.
 % Por ejemplo, para utilizar el tema de magíster de la EIT deben de utilizar
 % \udptheme{EIT-MS}
 \udptheme{EIT}
-
 
 \begin{document}
 %% Inicio de la portada
@@ -78,25 +91,30 @@ y a mi pareja y compañera de vida Patricia, por estar ahora y siempre...\\    }
 Les agradezco a todos quienes me tendieron una mano, me regalaron una sonrisa o una palabra de apoyo,
 a mis profesores más cercanos que siempre fueron buenos mentores, por siempre darme una palabra de aliento y de muchas veces darme buenas ideas para avanzar,
 a mis amigos cercanos, a mis hermanos por apoyarme siempre, a mis padres por ser siempre lo mejor que han podido ser, a mi precioso hijo que siempre sabe como hacerme feliz, y a mi compañera de vida Patricia que siempre está a mi lado para soñar, cuidar y amar.}
-% Abstrac en inglés
+% Abstract en inglés
 \abstract{%<- evita nueva linea en el abstract
-The main objective of this degree project is to develop a simulation model that allows represent the behavior of the physical and data link layer of the LoRa embedded devices, besides to a LoRaWAN/IPv6 transition module.\\
-Among the specific objectives is to implement this simulation model by means of using the discretes events simulation software OMNET ++ that will be developed in a modular way in the C++ programming language. This application of the simulation model aims to evaluate, verify and investigate the large variety of uses and possibles configurations to use with the LoRa devices in a virtual environment, without the inherent needs of monetary cost by adquisition, time , installation and the later implementation of a LoRa devices network with the features desired.\\
-In regards to the LoRaWAN/IPv6 translation module, it intends to develop with the objective of mapping the LoRaWAN network, and to get a complete knowledge of sent messages by every single node in the network, improving the debugging and trace capability on the LoRa network, together to a large number of uses at WEB application level that are out of the project scope.\\
-About the scope of this project, it aims to simulate just the operations that are comprehended in the physical and data link layer of the LoRa devices by means of the creation of events and entities which together will represent the behavior of this devices. To  verify the validity of the simulation model, tests will be generated for both, in the virtual environment, like to in the real environment with adaptive conditions to generate equivalent environments, and in this way define a range of error to the simulation model where will realize adjustment if it possible until the defined sensibility level like valid.\\
-In brief, the resultant product of this degree project, has been the simulation model of the LoRa devices and the LoRaWAN/IPv6 translation module . About the simulation model, this will be able to minimize and help with activities like design and verification of the behavior of this devices. Otherwise, the LoRaWAN/IPv6 translation module gives the integration capability of IoT (``\textit{Internet of Things}'') in this devices by means of use  of sockets, adding a top layer of security to the transmition channel (TLS).}
+\glsresetall
+The main objective of this degree project is to develop a simulation model that allows represent the behavior of the physical and data link layer of the LoRa embedded devices, besides a \gls{lorawan} to IPv6 transition module.\\
+Among the specific objectives is to implement this simulation model by means of using the discretes events simulation software \OMNET that will be developed in a modular way in the \CC programming language, besides the transition module will be developed in the C programming language. This application of the simulation model aims to evaluate, verify and investigate the large variety of uses and possibles configurations to use with the LoRa devices in a virtual environment, without the inherent needs of monetary cost by adquisition, time, installation and the later implementation of a LoRa devices network with the features desired.\\
+In regards to the translation module, it intends to develop with the objective of mapping the \gls{lorawan} network, and to get the sent messages from the network, improving the debugging and trace capability on the LoRa network, together to a large number of uses at web application level that are out of the project scope.\\
+About the scope of this project, it's been simulated just the behavior that is comprehended in the physical and data link layer of the LoRa devices by means of the creation of events and entities which together will represent the behavior of this devices. To verify the validity of the simulation model, tests will be generated for both, in the virtual environment, like to in the real environment with adaptive conditions to generate equivalent environments, and in this way define a range of error to the simulation model where will realize adjustment if it possible until the defined sensibility level like valid.\\
+In brief, the resultant product of this degree project, has been the simulation model of the LoRa devices and the \gls{lorawan}/IPv6 translation module. About the simulation model, this will be able to minimize and help with activities like design and verification of the behavior of this devices. Otherwise, the \gls{lorawan}/IPv6 translation module gives the integration capability of \gls{iot} in this devices by means of use of sockets.}
 % Resumen
 \resumen{%<- evita nueva linea en el resumen 
-El objetivo general de esta memoria de título, es desarrollar un modelo de simulación que represente el comportamiento de la capa física y capa de enlace de los dispositivos embebidos LoRa, junto a un módulo de transición del protocolo LoRaWAN/IPv6.Entre los objetivos específicos, está implementar este modelo de simulación,  mediante el uso del software de simulación de eventos discretos OMNET ++, el que se desarrollará de forma modular en el lenguaje C++. Esta aplicación del modelo de simulación tiene como objetivo el evaluar, verificar e investigar los distintos usos y configuraciones posibles a usar con los dispositivos LoRa en un ambiente virtual, sin necesidad de los gastos inherentes en tiempo y coste monetario a la adquisición, instalación y posterior implementación de una red de dispositivos LoRa con las características deseadas. Con respecto al módulo de transición del protocolo LoRaWAN al protocolo IPv6, este se pretende desarrollar con el objetivo de mapear una red de LoRaWAN, y obtener total conocimiento de los mensajes enviados desde cada nodo de la red, aumentando la capacidad de traza y depuración sobre la red LoRa, junto con un gran cantidad de usos a nivel de aplicación web, los cuales no están dentro de los alcances de este proyecto.\\
-Sobre los alcances del proyecto, se pretende simular sólo el funcionamiento que comprende la capa física y la capa de enlace de los dispositivos LoRa, mediante la creación de entidades y eventos que en su conjunto,
-representarán el comportamiento de estos dispositivos. Para verificar su validez como modelo de simulación, se generarán pruebas tanto en el entorno virtual, como en un entorno real con condiciones adaptadas, para generar ambientes equivalentes y de esta forma determinar un margen de error del modelo de simulación, donde se realizarán ajustes, si es posible, al nivel de sensibilidad definido como válido.\\
-En resumen, el producto resultante de esta memoria de título ha sido un modelo de simulación de los dispositivos LoRa y un módulo de transición entre LoRaWAN/IPv6. En relación al modelo de simulación, este minimizará y ayudará con actividades como el diseño y verificación del comportamiento de estos dispositivos. Por otra parte el módulo de transición otorga la capacidad de integrar el IoT(``\textit{Internet of Things}'') en estos dispositivos, mediante el uso de sockets, agregando una capa más alta de seguridad al canal de transmisión (TLS).}
+El objetivo general de esta memoria de título, es desarrollar un modelo de simulación que represente el comportamiento de la capa física y capa de enlace de los dispositivos embebidos LoRa, junto al desarrollo de un módulo de transición del protocolo \gls{lorawan} a IPv6. Entre los objetivos específicos, está implementar este modelo de simulación, mediante el uso del software de simulación de eventos discretos \OMNET, el que se desarrollará de forma modular en el lenguaje \CC, mientras que el módulo de transición será escrito en el lenguaje C. Esta aplicación del modelo de simulación tiene como objetivo el evaluar, verificar e investigar los distintos usos y configuraciones posibles a usar con los dispositivos LoRa en un ambiente virtual, sin necesidad de los gastos inherentes en tiempo y coste monetario a la adquisición, instalación y posterior implementación de una red de dispositivos LoRa con las características deseadas. Con respecto al módulo de transición, este se desarrolló con el objetivo de mapear una red \gls{lorawan}, y obtener los mensajes enviados desde la red, aumentando la capacidad de traza y depuración sobre la red LoRa, junto con un gran cantidad de usos a nivel de aplicación web, los cuales no están dentro de los alcances de este proyecto.\\
+Sobre los alcances del proyecto, se simuló sólo el funcionamiento que comprende la capa física y la capa de enlace de los dispositivos LoRa, mediante la creación de entidades y eventos que en su conjunto, representarán el comportamiento de estos dispositivos. Para verificar su validez como modelo de simulación, se generarán pruebas tanto en el entorno virtual, como en un entorno real con condiciones adaptadas, para generar ambientes equivalentes y de esta forma determinar un margen de error del modelo de simulación, donde se realizarán ajustes, si es posible, al nivel de sensibilidad definido como válido.\\
+En resumen, el producto resultante de esta memoria de título ha sido un modelo de simulación de dispositivos LoRa y un módulo de transición entre \gls{lorawan}/IPv6. En relación al modelo de simulación, este minimizará y ayudará con actividades como el diseño y verificación del comportamiento de estos dispositivos. Por otra parte el módulo de transición otorga la capacidad de integrar el \gls{iot} en estos dispositivos, mediante el uso de sockets.}
 
 \makecover
 % Indices y listas
+
 \tableofcontents% tabla de contenido
-\listoftables%    índice de tablas
+\listoftables%    índice de tablas	
 \listoffigures%   índice de figuras
+
+
+
+
 % puede agregar otras listas o índices acá de ser necesario
 
 
@@ -126,15 +144,19 @@ En resumen, el producto resultante de esta memoria de título ha sido un modelo 
 \bibliographystyle{IEEEtran}
 % Acá puede incluir uno más archivos de referencia
 \bibliography{IEEEabrv,tubiblio}
-
-
 % Simbología y glosario
 % Utilice un paquete para generar símbolos y glosarios.
 % Por ejemplo: nomencl (http://texdoc.net/pkg/nomencl)
+%\input{capitulos/glosario}
+%%acronimos
+\glsaddall
+\printglossary[type=\acronymtype]
 
-
+\printglossary[type=main]
 % Anexos
 \appendix
+
+
 %asd
 \input{capitulos/anexoa}
 %asd

@@ -1,14 +1,16 @@
-% Ejemplo del uso de la template para escribir tesis/memorias de la Universidad Diego Portales.
+% !TEX encoding = UTF-8 Unicode
+% Ejemplo del uso de la template para escribir /memorias de la Universidad Diego Portales.
 %
 % Eviar bugs a: Adín Ramírez, adin.ramirez (at) mail.udp.cl
 
 % Puede generar borradores si omite la opción "final" de la clase.
 % \documentclass{udpthesis}
-\documentclass[final,oneside]{udpthesis}
+\documentclass[final]{udpthesis}
 % Establecemos el sistema para uso del español
 % Babel ya esta cargado dentro de updthesis
 \usepackage[T1]{fontenc}%    output
 \usepackage[utf8]{inputenc}% input
+\usepackage{textcomp}
 \usepackage{lmodern}
 
 % Leyendas
@@ -45,12 +47,18 @@
 %\usepackage{acronym}
 \usepackage[acronym,xindy,toc,section=chapter]{glossaries}
 \makeglossaries
-
 %definicion de terminos
 %
 \loadglsentries{capitulos/glosario}
-
-
+%unidades metricas​
+\usepackage[binary-units=true]{siunitx} %permite colocar unidades de medida
+\sisetup{per-mode=symbol,per-symbol =p} %reemplaza el / por una p
+%\sisetup{bit-mode=symbol,bit-symbol =b}
+% EdIT /usr/share/texlive/texmf-dist/tex/latex/siunitx/config/siunitx-binary.cfg
+\DeclareSIUnit\bit{b} %reemplaza bit por b
+\sisetup{list-final-separator=~ y~} %reemplaza and por y
+\sisetup{list-pair-separator=~ y~} %reemplaza and por y
+\sisetup{range-phrase=~ a~}
 %%c++ y omnet++
 \newcommand\CC{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
 \newcommand\OMNET{OMNET\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
@@ -98,12 +106,12 @@ The main objective of this degree project is to develop a simulation model that 
 Among the specific objectives is to implement this simulation model by means of using the discretes events simulation software \OMNET that will be developed in a modular way in the \CC programming language, besides the transition module will be developed in the C programming language. This application of the simulation model aims to evaluate, verify and investigate the large variety of uses and possibles configurations to use with the LoRa devices in a virtual environment, without the inherent needs of monetary cost by adquisition, time, installation and the later implementation of a LoRa devices network with the features desired.\\
 In regards to the translation module, it intends to develop with the objective of mapping the \gls{lorawan} network, and to get the sent messages from the network, improving the debugging and trace capability on the LoRa network, together to a large number of uses at web application level that are out of the project scope.\\
 About the scope of this project, it's been simulated just the behavior that is comprehended in the physical and data link layer of the LoRa devices by means of the creation of events and entities which together will represent the behavior of this devices. To verify the validity of the simulation model, tests will be generated for both, in the virtual environment, like to in the real environment with adaptive conditions to generate equivalent environments, and in this way define a range of error to the simulation model where will realize adjustment if it possible until the defined sensibility level like valid.\\
-In brief, the resultant product of this degree project, has been the simulation model of the LoRa devices and the \gls{lorawan}/IPv6 translation module. About the simulation model, this will be able to minimize and help with activities like design and verification of the behavior of this devices. Otherwise, the \gls{lorawan}/IPv6 translation module gives the integration capability of \gls{iot} in this devices by means of use of sockets.}
+In brief, the resultant product of this degree project, has been the simulation model of the LoRa devices and the \gls{lorawan}/IPv6 translation module. About the simulation model, this will be able to minimize and help with activities like design and verification of the behavior of this devices. Otherwise, the \gls{lorawan}/IPv6 translation module gives the integration capability of \gls{iot} in this devices by means of use of \glspl{socket}.}
 % Resumen
 \resumen{%<- evita nueva linea en el resumen 
 El objetivo general de esta memoria de título, es desarrollar un modelo de simulación que represente el comportamiento de la capa física y capa de enlace de los dispositivos embebidos LoRa, junto al desarrollo de un módulo de transición del protocolo \gls{lorawan} a IPv6. Entre los objetivos específicos, está implementar este modelo de simulación, mediante el uso del software de simulación de eventos discretos \OMNET, el que se desarrollará de forma modular en el lenguaje \CC, mientras que el módulo de transición será escrito en el lenguaje C. Esta aplicación del modelo de simulación tiene como objetivo el evaluar, verificar e investigar los distintos usos y configuraciones posibles a usar con los dispositivos LoRa en un ambiente virtual, sin necesidad de los gastos inherentes en tiempo y coste monetario a la adquisición, instalación y posterior implementación de una red de dispositivos LoRa con las características deseadas. Con respecto al módulo de transición, este se desarrolló con el objetivo de mapear una red \gls{lorawan}, y obtener los mensajes enviados desde la red, aumentando la capacidad de traza y depuración sobre la red LoRa, junto con un gran cantidad de usos a nivel de aplicación web, los cuales no están dentro de los alcances de este proyecto.\\
 Sobre los alcances del proyecto, se simuló sólo el funcionamiento que comprende la capa física y la capa de enlace de los dispositivos LoRa, mediante la creación de entidades y eventos que en su conjunto, representarán el comportamiento de estos dispositivos. Para verificar su validez como modelo de simulación, se generarán pruebas tanto en el entorno virtual, como en un entorno real con condiciones adaptadas, para generar ambientes equivalentes y de esta forma determinar un margen de error del modelo de simulación, donde se realizarán ajustes, si es posible, al nivel de sensibilidad definido como válido.\\
-En resumen, el producto resultante de esta memoria de título ha sido un modelo de simulación de dispositivos LoRa y un módulo de transición entre \gls{lorawan}/IPv6. En relación al modelo de simulación, este minimizará y ayudará con actividades como el diseño y verificación del comportamiento de estos dispositivos. Por otra parte el módulo de transición otorga la capacidad de integrar el \gls{iot} en estos dispositivos, mediante el uso de sockets.}
+En resumen, el producto resultante de esta memoria de título ha sido un modelo de simulación de dispositivos LoRa y un módulo de transición entre \gls{lorawan}/IPv6. En relación al modelo de simulación, este minimizará y ayudará con actividades como el diseño y verificación del comportamiento de estos dispositivos. Por otra parte el módulo de transición otorga la capacidad de integrar el \gls{iot} en estos dispositivos, mediante el uso de \glspl{socket}.}
 
 \makecover
 % Indices y listas

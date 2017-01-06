@@ -23,18 +23,42 @@
 \providecommand*\glsXpageXhyperemph[2]{\setentrycounter[#1]{page}\hyperemph{#2}}
 \providecommand*\glsXpageXglsignore[2]{\setentrycounter[#1]{page}\glsignore{#2}}
 \begin{theglossary}\glossaryheader
+\glsgroupheading{A}\relax\glsresetentrylist
+\glossentry{adr}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{11}\delimN 
+\glsXpageXglsnumberformat{}{50}, \glsseeformat[Glosario:]{adrg}{}}}\glsgroupskip
 \glsgroupheading{I}\relax\glsresetentrylist
 \glossentry{iot}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}\delimN 
 \glsXpageXglsnumberformat{}{iii}, 
-\glsXpageXglsnumberformat{}{49}, \glsseeformat[Glosario:]{iotg}{}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{9}\delimN 
+\glsXpageXglsnumberformat{}{10}\delimN 
+\glsXpageXglsnumberformat{}{50}, \glsseeformat[Glosario:]{iotg}{}}}\glsgroupskip
 \glsgroupheading{L}\relax\glsresetentrylist
 \glossentry{lorawan}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}\delimN 
 \glsXpageXglsnumberformat{}{iii}, 
 \glsXpageXglsnumberformat{}{4}\delimR 
 \glsXpageXglsnumberformat{}{7}\delimN 
-\glsXpageXglsnumberformat{}{49}, \glsseeformat[Glosario:]{lorawang}{}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{9}\delimR 
+\glsXpageXglsnumberformat{}{11}\delimN 
+\glsXpageXglsnumberformat{}{14}\delimN 
+\glsXpageXglsnumberformat{}{18}\delimN 
+\glsXpageXglsnumberformat{}{50}, \glsseeformat[Glosario:]{lorawang}{}}}\relax\glsresetentrylist
 \glossentry{lpwan}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{49}, \glsseeformat[Glosario:]{lpwang}{}}}%
+\glsXpageXglsnumberformat{}{9}\delimN 
+\glsXpageXglsnumberformat{}{50}, \glsseeformat[Glosario:]{lpwang}{}}}\glsgroupskip
+\glsgroupheading{P}\relax\glsresetentrylist
+\glossentry{per}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{14}\delimN 
+\glsXpageXglsnumberformat{}{15}\delimN 
+\glsXpageXglsnumberformat{}{50}, \glsseeformat[Glosario:]{perg}{}}}\glsgroupskip
+\glsgroupheading{S}\relax\glsresetentrylist
+\glossentry{sf}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{10}\delimN 
+\glsXpageXglsnumberformat{}{11}\delimN 
+\glsXpageXglsnumberformat{}{50}, \glsseeformat[Glosario:]{sfg}{}}}\glsgroupskip
+\glsgroupheading{T}\relax\glsresetentrylist
+\glossentry{tun}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{50}, \glsseeformat[Glosario:]{tung}{}}}%
 \end{theglossary}\glossarypostamble

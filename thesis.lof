@@ -1,8 +1,6 @@
 \select@language {spanish}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Gr\IeC {\'a}fica de Tama\IeC {\~n}o de Payload MAC por Tiempo que toma el paquete en llegar a destino (``\textit {Time on Air}''). Fuente:\cite {Xavier}\relax }}{12}{figure.caption.7}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Gr\IeC {\'a}fica de Paquetes generados en una hora por n\IeC {\'u}mero de paquetes recibidos en una hora. Fuente: \cite {Xavier}\relax }}{13}{figure.caption.8}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Cantidad de paquetes transmitidos, recibidos y Packet Loss por rango de distancia en medici\IeC {\'o}n hecha por nodo sobre auto. Fuente:\cite {Juha}\relax }}{14}{figure.caption.9}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Cantidad de paquetes transmitidos, recibidos y Packet Loss por rango de distancia en medici\IeC {\'o}n hecha por nodo sobre bote. Fuente:\cite {Juha}\relax }}{14}{figure.caption.10}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Gr\IeC {\'a}fica de Tama\IeC {\~n}o de \textit {Payload} MAC por Tiempo que toma el paquete en llegar a destino (``\textit {Time on Air}''). Fuente:\cite {Xavier}\relax }}{12}{figure.caption.7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Gr\IeC {\'a}fica de Paquetes generados en una hora por n\IeC {\'u}mero de paquetes recibidos en una hora. Fuente:\cite {Xavier}\relax }}{13}{figure.caption.8}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Formato de mensaje de protocolo ALOHA\relax }}{20}{figure.caption.11}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Formato de mensaje de protocolo LoRaWAN. Fuente:~\cite {Sornin}\relax }}{24}{figure.caption.12}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama de flujo de mensajes para fase de emparejamiento en red LoRa\relax }}{33}{figure.caption.15}

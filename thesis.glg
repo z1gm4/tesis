@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 06.01.2017  04:54:40
-;; Indexstyle: "/tmp/ABsrSmfxOP", Rawindex: "/tmp/UNeg3EvTa_", Output: "thesis.gls"
+;; at 06.01.2017  14:56:38
+;; Indexstyle: "/tmp/q01jUjZr_D", Rawindex: "/tmp/QB5qQC628W", Output: "thesis.gls"
 
 
 Building indexentry-tree:
@@ -9,15 +9,33 @@ Hierdepth of index is :TREE
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 
 Forming letter-groups:
 Letter-group: "´ÃË€æ€¼" -> "L"
 Letter-group: "¨¼Ú—Ë¼—Ú Ãœ Ú¤¨¼Ð" -> "I"
+Letter-group: "ÐÃ†®—Ú" -> "S"
 Letter-group: "´Èæ€¼" -> "L"
+Letter-group: "Ðœ" -> "S"
+Letter-group: "€Ë" -> "A"
+Letter-group: "È—Ë" -> "P"
+Letter-group: "Úà¼" -> "T"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "€Ë" -> "A"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "¨¼Ú—Ë¼—Ú Ãœ Ú¤¨¼Ð" -> "I"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "´ÃË€æ€¼" -> "L"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "È—Ë" -> "P"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "Ðœ" -> "S"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "Úà¼" -> "T"
 WARNING: location-reference "{}{i}" did match multiple location-classes! (taking first one)
 
 makeglossaries messages:

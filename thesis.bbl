@@ -46,18 +46,18 @@
   \url{https://www.lora-alliance.org/portals/0/specs/LoRaWAN%20Specification%201R0.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Omnet++}
+\BIBentryALTinterwordspacing
+{András Varga}. (2016) Omnet++ simulation manual. [Online]. Available:
+  \url{https://omnetpp.org/doc/omnetpp/SimulationManual.pdf}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Sornin2}
 \BIBentryALTinterwordspacing
 { M. Luis (Semtech), N. Sornin (Semtech), T. Eirich (IBM), T. Kramp (IBM),
   O.Hersent (Actility)}. (2015, Jan.) Lora mac specification. Middle East
   Technical University. [Online]. Available:
   \url{https://src.aw-som.com/git/awsom/loramac-node/raw/6a65548e24d2262b1af647469b239823f740c780/Doc/LoRa%20MAC%20Specification.pdf}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Omnet++}
-\BIBentryALTinterwordspacing
-{András Varga}. (2016) Omnet++ simulation manual. [Online]. Available:
-  \url{https://omnetpp.org/doc/omnetpp/SimulationManual.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Abdullah}
@@ -88,8 +88,8 @@
 \bibitem{simulato}
 \BIBentryALTinterwordspacing
 {Jason Liu, L. Felipe Perrone, David M. NicolMichael Liljenstam(Dartmouth
-  College), Chip Elliott, David Pearson(BBN Technologies)}. Simulation modeling
-  of large-scale ad-hoc sensor networks. [Online]. Available:
+  College), Chip Elliott, David Pearson(BBN Technologies)}. (2000) Simulation
+  modeling of large-scale ad-hoc sensor networks. [Online]. Available:
   \url{http://eecs.wsu.edu/~holder/courses/cse6362/pubs/Liu01.pdf}
 \BIBentrySTDinterwordspacing
 
@@ -125,14 +125,14 @@
 
 \bibitem{use1}
 \BIBentryALTinterwordspacing
-{Semtech}, ``Smart industrial control.'' [Online]. Available:
+{Semtech}, ``Smart industrial control,'' 2016. [Online]. Available:
   \url{http://www.semtech.com/wireless-rf/internet-of-things/usecase/Industrial-Temp-use-case-long.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{use2}
 \BIBentryALTinterwordspacing
 {inteliLIGHT}, ``intelilight lora™ streetlight control solution successfully
-  passes field trials in szada, hungary.'' [Online]. Available:
+  passes field trials in szada, hungary,'' 2016. [Online]. Available:
   \url{https://www.lora-alliance.org/portals/0/documents/whitepapers/inteliLIGHT_LoRa_-_Szada_Case_Study.pdf}
 \BIBentrySTDinterwordspacing
 

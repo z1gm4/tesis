@@ -2,7 +2,7 @@
 % It needs a theme file named as udpthesisXXX.sty, where XXX is a name you give to the file.
 % You can load this theme using the macro \udptheme{XXX} in your thesis to load such file.
 %
-% Adín Ramírez, adin.ramirez (at) mail.udp.cl
+% Adï¿½n Ramï¿½rez, adin.ramirez (at) mail.udp.cl
 
 % Identification
 \NeedsTeXFormat{LaTeX2e}[1995/12/01] 
@@ -245,7 +245,7 @@
 
 % Defaults
 \degreetext{t\'{i}tulo}% o grado
-\thesistype{Tesis}% o Memoria
+\thesistype{Memoria}% o Memoria
 
 \professortext{Profesor gu\'{i}a}
 \committeetext{Comit\'{e}}

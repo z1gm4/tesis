@@ -69,8 +69,7 @@ O.Hersent (Actility)}},
 @Misc{tomas,
   author       = {{Tomás Lagos}},
   title        = {Implementación de módulo IPv6 base para redes LoRa},
-  editor 	   = {Tésis de Pregrado},
-  howpublished = {},
+  howpublished = {Tésis de Pregrado},
   organization = {Universidad Diego Portales},
   year         = {2016},
 }
@@ -78,12 +77,14 @@ O.Hersent (Actility)}},
 @Misc{use1,
   author = {{Semtech}},
   title  = {SMART INDUSTRIAL CONTROL},
+  year = {2016},
   url    = {http://www.semtech.com/wireless-rf/internet-of-things/usecase/Industrial-Temp-use-case-long.pdf},
 }
 
 @Misc{use2,
   author = {{inteliLIGHT}},
   title  = {inteliLIGHT LoRa™ Streetlight Control Solution Successfully Passes Field Trials in Szada, Hungary},
+  year = {2016},
   url    = {https://www.lora-alliance.org/portals/0/documents/whitepapers/inteliLIGHT_LoRa_-_Szada_Case_Study.pdf},
 }
 
@@ -142,6 +143,7 @@ O.Hersent (Actility)}},
 title = {Simulation Modeling of Large-Scale Ad-hoc Sensor Networks},
 url = {http://eecs.wsu.edu/~holder/courses/cse6362/pubs/Liu01.pdf},
 author = {{Jason Liu, L. Felipe Perrone, David M. NicolMichael Liljenstam(Dartmouth College),  Chip Elliott, David Pearson(BBN Technologies)}},
+year = {2000},
 publisher = {Institute for Security Technology Studies (ISTS)},
 }
 

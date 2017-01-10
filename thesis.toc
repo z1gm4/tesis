@@ -14,38 +14,38 @@
 \contentsline {section}{\numberline {2.3}Modelado de redes ALOHA}{14}{section.2.3}
 \contentsline {section}{\numberline {2.4}Integraci\IeC {\'o}n de IoT en LoRaWAN}{16}{section.2.4}
 \contentsline {section}{\numberline {2.5}M\IeC {\'e}todos de programaci\IeC {\'o}n en C orientado a redes.}{18}{section.2.5}
-\contentsline {chapter}{Cap\'{i}tulo 3.\ Fundamentos Te\IeC {\'o}ricos y M\IeC {\'e}todos}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Marco Te\IeC {\'o}rico}{19}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}ALOHAnet}{19}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Spreading Factor}{21}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Dispositivos LoRa}{22}{subsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.3.1}Formato de Mensaje LoRa}{24}{subsubsection.3.1.3.1}
-\contentsline {subsection}{\numberline {3.1.4}Diferencias entre LoRaWAN y ALOHAnet}{25}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Simulaci\IeC {\'o}n por eventos discretos}{26}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Herramientas para simulaci\IeC {\'o}n de redes}{27}{subsection.3.1.6}
-\contentsline {section}{\numberline {3.2}Modulo de Transici\IeC {\'o}n LoRaWAN/IPv6}{28}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Funcionamiento}{28}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Contribuciones}{29}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Consideraciones}{29}{subsection.3.2.3}
+\contentsline {chapter}{Cap\'{i}tulo 3.\ Marco Te\IeC {\'o}rico}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}ALOHAnet}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}Spreading Spectrum}{21}{section.3.2}
+\contentsline {section}{\numberline {3.3}Dispositivos LoRa}{22}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Formato de Mensaje LoRa}{24}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Diferencias entre LoRaWAN y ALOHAnet}{27}{section.3.4}
+\contentsline {section}{\numberline {3.5}Simulaci\IeC {\'o}n por eventos discretos}{28}{section.3.5}
+\contentsline {section}{\numberline {3.6}Herramientas para simulaci\IeC {\'o}n de redes}{30}{section.3.6}
 \contentsline {chapter}{Cap\'{i}tulo 4.\ Resultados}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}Definici\IeC {\'o}n de Variables y Par\IeC {\'a}metros}{31}{section.4.1}
-\contentsline {section}{\numberline {4.2}Definici\IeC {\'o}n de Fases de Transmisi\IeC {\'o}n en LoraWAN}{32}{section.4.2}
-\contentsline {subsubsection}{\numberline {4.2.0.1}Fase de Emparejamiento}{32}{subsubsection.4.2.0.1}
-\contentsline {subsection}{\numberline {4.2.1}Fase de Transmisi\IeC {\'o}n}{34}{subsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.1.1}Fase de Retransmisi\IeC {\'o}n}{35}{subsubsection.4.2.1.1}
-\contentsline {subsection}{\numberline {4.2.2}Fase de Reposo}{36}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}P\IeC {\'e}rdida de Paquetes}{36}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Par\IeC {\'a}metros y Variables en Mediciones}{36}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Pruebas Realizadas}{39}{subsection.4.3.1}
-\contentsline {section}{\numberline {4.4}Resultados Obtenidos}{40}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Cambios de Estado}{40}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Pruebas de Transmisi\IeC {\'o}n en ambiente virtual}{41}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Pruebas de Transmisi\IeC {\'o}n en ambiente real}{44}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}\IeC {\'I}ndice de P\IeC {\'e}rdida de Paquetes}{44}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Resultados Obtenidos agregando P\IeC {\'e}rdida de Paquetes}{45}{subsection.4.4.5}
-\contentsline {chapter}{Cap\'{i}tulo 5.\ Conclusiones}{47}{chapter.5}
-\contentsline {chapter}{Siglas}{51}{section*.29}
-\contentsline {chapter}{Glosario}{53}{section*.31}
-\contentsline {chapter}{Anexo A.\ Anexo A}{57}{appendix.Alph1}
-\contentsline {chapter}{Anexo B.\ Anexo B}{61}{appendix.Alph2}
-\contentsline {chapter}{Anexo C.\ Anexo C}{67}{appendix.Alph3}
+\contentsline {section}{\numberline {4.1}Definici\IeC {\'o}n de variables y par\IeC {\'a}metros}{31}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Arquitectura de red}{32}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Definici\IeC {\'o}n de fases de transmisi\IeC {\'o}n en LoraWAN}{34}{section.4.2}
+\contentsline {subsubsection}{\numberline {4.2.0.1}Fase de emparejamiento}{34}{subsubsection.4.2.0.1}
+\contentsline {subsection}{\numberline {4.2.1}Fase de transmisi\IeC {\'o}n}{36}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Fase de retransmisi\IeC {\'o}n}{37}{subsubsection.4.2.1.1}
+\contentsline {subsection}{\numberline {4.2.2}Fase de reposo}{38}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}P\IeC {\'e}rdida de paquetes}{38}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}M\IeC {\'o}dulo de Transici\IeC {\'o}n LoRaWAN/IPv6}{38}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Funcionamiento}{39}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Contribuciones}{39}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Consideraciones}{40}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Par\IeC {\'a}metros y variables en mediciones}{40}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Pruebas Realizadas}{43}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}An\IeC {\'a}lisis de resultados}{44}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Cambios de estado}{44}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Pruebas de transmisi\IeC {\'o}n en ambiente virtual}{46}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Pruebas de transmisi\IeC {\'o}n en ambiente real}{49}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}\IeC {\'I}ndice de p\IeC {\'e}rdida de paquetes}{51}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.5}Resultados obtenidos agregando p\IeC {\'e}rdida de paquetes}{52}{subsection.4.5.5}
+\contentsline {chapter}{Cap\'{i}tulo 5.\ Conclusiones}{55}{chapter.5}
+\contentsline {chapter}{Siglas}{59}{section*.32}
+\contentsline {chapter}{Glosario}{61}{section*.34}
+\contentsline {chapter}{Anexo A.\ Anexo A}{65}{appendix.Alph1}
+\contentsline {chapter}{Anexo B.\ Anexo B}{69}{appendix.Alph2}
+\contentsline {chapter}{Anexo C.\ Anexo C}{75}{appendix.Alph3}

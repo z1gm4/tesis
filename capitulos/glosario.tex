@@ -7,17 +7,29 @@
 
 \newglossaryentry{lorawang}{name={LoRaWAN}, description={LoRaWAN, es el protocolo utilizado en las redes LPWAN de la familia de los LoRa, el que tiene la cualidad de optimizar el funcionamiento de ALOHAnet utilizando una programación de mensajes en base al tiempo, y junto con esto, el uso de multi canales de comunicación para evitar colisiones y asegurar una conectividad con el menor grado de pérdidas. Aunque, también este acrónimo es utilizado para hacer referencia a las redes LPWAN de la familia de los LoRa}}
 
-\newglossaryentry{socket}{name={Socket}, plural={Sockets}, description={Los Sockets, son interfaces de programación, para el uso de los dos tipos de protocolos involucrados en la capa de transporte. Estos protocolos son TCP y UDP.}}
+\newglossaryentry{socket}{name={Socket}, plural={Sockets}, description={Los Sockets, son interfaces de programación, para el uso de los dos tipos de protocolos involucrados en la capa de transporte. Estos protocolos son TCP y UDP}}
 
-\newglossaryentry{perg}{name={PER}, description={El PER es el porcentaje de paquetes que llegaron a destino con error en el transcurso de una transmisión de datos. Los motivos de la recepción con errores del paquete puede deberse a interferencias de señal, bits corruptos, entre otros motivos.}}
+\newglossaryentry{perg}{name={Packet Error Rate}, description={El PER es el porcentaje de paquetes que llegaron a destino con error en el transcurso de una transmisión de datos. Los motivos de la recepción con errores del paquete puede deberse a interferencias de señal, bits corruptos, entre otros motivos}}
 
-\newglossaryentry{adrg}{name={ADR}, description={El ADR es una técnica de adaptación de la tasa de envío de datos, a fin de aumentar o disminuir la distancia máxima de transmisión y con esto mejorar la calidad del enlace.}}
+\newglossaryentry{adrg}{name={ADR}, description={El ADR es una técnica de adaptación de la tasa de envío de datos, a fin de aumentar o disminuir la distancia máxima de transmisión y con esto mejorar la calidad del enlace}}
 
-\newglossaryentry{sfg}{name={SF}, description={Los \textit{Spreading Factors}, son índices para la denominación dada a los canales de bandas de frecuencia de espectro expandido, utilizados por los dispositivos LoRa. Estos canales poseen frecuencias base específicas, como también una tasa de envío de datos específica para cada canal, e inclusive una distancia máxima de transmisión asociado a la potencia del enlace.}}
+\newglossaryentry{sfg}{name={Spreading Factor}, description={Los \textit{Spreading Factors}, son índices para la denominación dada a los canales de bandas de frecuencia de espectro expandido, utilizados por los dispositivos LoRa. Estos canales poseen frecuencias base específicas, como también una tasa de envío de datos específica para cada canal, e inclusive una distancia máxima de transmisión asociado a la potencia del enlace}}
 
-\newglossaryentry{tung}{name={TUN}, description={TUN, es el nombre para los dispositivos virtuales de red, los que son operan completamente en base a \textit{Softwares}, a diferencia de los dispositivos de red que poseen un respaldo por \textit{Hardware}. Estos dispositivos, son comúnmente usados como interfaces puente entre dos o más redes, con el fin de otorgar conectividad entre redes, sin la necesidad de utilizar equipamiento físico.}}
+\newglossaryentry{tung}{name={TUN}, description={TUN, es el nombre para los dispositivos virtuales de red, los que son operan completamente en base a \textit{Softwares}, a diferencia de los dispositivos de red que poseen un respaldo por \textit{Hardware}. Estos dispositivos, son comúnmente usados como interfaces puente entre dos o más redes, con el fin de otorgar conectividad entre redes, sin la necesidad de utilizar equipamiento físico}}
+
+\newglossaryentry{apig}{name={API}, plural={APIs} ,description={Las APIs, son el conjunto de subrutinas, métodos, funciones, protocolos y herramientas que definen las comunicaciones entre los componentes de software que componen un programa}}
+
+\newglossaryentry{ackg}{name={ACK} ,description={El paquete ACK, es un tipo de mensaje utilizado para la comunicación en redes de datos en telecomunicaciones, para entregar un acuse de recibo de la información previamente enviada. Este tipo de mensaje, es utilizado para la comunicación de protocolos como TCP(\textit{Trasport Control Protocol}), entre otros protocolos basados en mensajes ACK}}
+
+\newglossaryentry{lbtg}{name={Listen Before Talk} ,description={LBT, es una técnica usada en comunicaciones sobre enlaces de radio frecuencia, que permite que los radio transmisores puedan censar si el canal que utilizarán para comunicarse, está ocupado o no antes de iniciar una transmisión}}
 
 %%acrónimo
+\newglossaryentry{lbt}{type=\acronymtype, name={Listen Before Talk}, description={\textit{Listen Before Talk}},  first={LBT(\textit{Listen Before Talk})\glsadd{lbtg}}, see=[Glosario:]{lbtg}}
+
+\newglossaryentry{ack}{type=\acronymtype, name={ACK}, description={\textit{Acknowledgement}},  first={ACK(\textit{Acknowledgement})\glsadd{ackg}}, see=[Glosario:]{ackg}}
+
+\newglossaryentry{api}{type=\acronymtype, name={API}, description={\textit{Application Programming Interface}},  first={API(\textit{Application Programming Interface})\glsadd{apig}}, see=[Glosario:]{apig}}
+
 \newglossaryentry{tun}{type=\acronymtype, name={TUN}, description={\textit{network TUNnel}},  first={TUN(\textit{network TUNnel})\glsadd{tung}}, see=[Glosario:]{tung}}
 
 

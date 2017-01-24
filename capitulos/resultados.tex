@@ -28,7 +28,7 @@ SF11 & $440bps$ & $11km$ & $740ms$ \\ \hline
 SF12 & $290bps$ & $14km$ & $1400ms$ \\ 
 \hline
 \end{tabular}
-\caption{Asignación de valores para los diferentes \gls{sf}.}
+\caption{Asignación de valores para los diferentes \glsentryname{sf}.}
 \label{tab:par}
 \end{table}
 \subsection{Arquitectura de red}
@@ -164,7 +164,7 @@ Número de Host & \gls{sf} & Distancia a \textit{gateway} [Metros]\\
 10 & 12 & 14 \\
 \hline
 \end{tabular}
-\caption{Tabla con distribución de nodos en cada \gls{sf} para pruebas de simulación}
+\caption{Tabla con distribución de nodos en cada \glsentryname{sf} para pruebas de simulación}
 \label{tab:prueba}
 \end{table}
 
@@ -237,12 +237,12 @@ En estos gráfico, se aprecia de que a medida de que aumenta la cantidad de nodo
 En estas pruebas, se realizaron transmisiones de datos entre diez y cien nodos durante \SI{60}{\second} de simulación, con el fin de detectar la cantidad de colisiones , por el aumento de la saturación de los canales utilizados. El tiempo de duración de las pruebas de simulación se debe a que en \SI{60}{\second}, es posible visualizar la correcta transición de todos los estados de comunicación presentes en el modelo de simulación, hasta un número de 100 nodos. El valor de la duración de la simulación, fue alcanzado mediante un proceso de optimización de los resultados, donde mediante la realización reiterada de pruebas con resultados no representativos, se alcanzó el tiempo de \SI{60}{\second}. Cabe destacar, que si bien en la simulación transcurre durante \SI{60}{\second}, los gráficos de cambios de estado, sólo muestran dos iteraciones completas del ciclo completo, para evitar mostrar redundancia en los resultados expuestos en los gráficos. No obstante, para el resto de los gráficos, si son utilizados los valores obtenidos durante los \SI{60}{\second} de simulación.\\
 Por otra parte, se define el inicio de transmisión de todos los nodos presentes en una simulación, en el mismo segundo. Sin embargo, la herramienta de simulación al mostrar el intercambio de mensajes de forma gráfica, genera una representación gráfica secuencial (sigue el índice asignado a cada nodo y \gls{sf}), es decir, muestra como el intercambio de mensajes se realizará primero en el nodo de índice 0, que en el nodo 1 (a modo de ejemplo), no obstante, esto no se condice con los tiempos de envío de mensajes en la simulación, dado que ambos intentan comunicarse en el mismo segundo, lo que produce que colisionen mensajes y sean reprogramados para la siguiente ventana de envío. En este punto el simulador genera una distribución nuevamente secuencial, sobre cuál nodo calendariza primero su retransmisión, lo que genera un orden secuencial en el envío de mensajes, pero a nivel de programación. Este factor, afecta a los resultados de la simulación de manera negativa, al alejarlos de la realidad, pero se corrigieron al agregar tiempos aleatorios a la calendarización de las próximas programaciones de envío. Lo que se estudió en base a la diferencia de tiempos de envío entre los nodos una vez secuenciados, con el fin de equiparar el ambiente real con el virtual.\\
 A través de estas mediciones, se espera visualizar el creciente nivel de retardo en el inicio de las distintas fases de los nodos por efecto de las colisiones, y las retransmisiones inherentes de comunicaciones basadas en el protocolo ALOHA. Cabe decir de que sólo existen colisiones dentro de cada \gls{sf} o canal, ya que entre los distintos \gls{sf} según las especificaciones técnicas  y según las pruebas empíricas realizadas a las capacidades del canal , se indica de que al usar la técnica de modulación de espectro expandido, basta con conocer la frecuencia base del mensaje para poder recibirlo y demodularlo sin problemas, dado que cualquier interferencia en el resto del espectro de la señal, será eliminado al momento de filtrar la señal con un filtro pasa banda, pasa bajo, entre otros, dependiendo del necesario para cada canal~\cite{Sornin}~\cite{Xavier}.\\
-En la Fig~\ref{nodos:10}, se observa la cantidad de colisiones por cada \gls{sf}, donde la utilización de cada canal sería aproximadamente de 2 nodos por canal, lo que eventualmente es una saturación muy baja, lo que se traduce en un retardo pequeño en tiempo de el correcto inicio y finalización de los estados correspondientes a cada fase de la comunicación en los dispositivos LoRa.
+En la Fig~\ref{nodos:10}, se observa la cantidad de colisiones por cada \gls{sf}, donde la utilización de cada canal fue aproximadamente de 2 nodos por canal, lo que eventualmente es una saturación muy baja, lo que se traduce en un retardo pequeño en tiempo de el correcto inicio y finalización de los estados correspondientes a cada fase de la comunicación en los dispositivos LoRa.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=13cm,height=30cm,keepaspectratio]{images/colisiones10nodos.eps}
-\caption{Gráfico de colisiones ocurridos entre los distintos \gls{sf}, para 10 nodos transmitiendo. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:1}}}
+\caption{Gráfico de colisiones ocurridos entre los distintos \glsentryname{sf}, para 10 nodos transmitiendo. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:1}}}
 \label{nodos:10}
 \end{figure}
 
@@ -251,7 +251,7 @@ La diferencia de valores entre \gls{sf} también es explicada por el hecho de qu
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=13cm,height=30cm,keepaspectratio]{images/colisiones100nodos.eps}
-\caption{Gráfico de colisiones ocurridos entre los distintos \gls{sf}, para 100 nodos transmitiendo. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:2}}}
+\caption{Gráfico de colisiones ocurridos entre los distintos \glsentryname{sf}, para 100 nodos transmitiendo. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:2}}}
 \label{nodos:100}
 \end{figure}
 \subsection{Pruebas de transmisión en ambiente real}
@@ -278,7 +278,7 @@ SF8 & 469 & 38 & \SI{91.9}{\percent}\\
 SF7 & 983 & 47 & \SI{95.2}{\percent}\\
 \hline
 \end{tabular}
-\caption{Tabla con resultados de pruebas de conectividad por \gls{sf}}
+\caption{Tabla con resultados de pruebas de conectividad por \glsentryname{sf}}
 \label{prueba:real}
 \end{table}
 \newpage \noindent
@@ -296,7 +296,7 @@ Estos resultados al ser satisfactorios demuestran de que, con diez nodos, la fun
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=13cm,height=30cm,keepaspectratio]{images/errores10nodos.eps}
-\caption{Gráfico de cantidad de paquetes con errores en cada \gls{sf} en la simulación, para 10 nodos. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:3}}}
+\caption{Gráfico de cantidad de paquetes con errores en cada \glsentryname{sf} en la simulación, para 10 nodos. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:3}}}
 \label{prueba:4}
 \end{figure}\newpage \noindent
 Sin embargo, en la Fig~\ref{prueba:5}, se evidencia un aumento considerable en la cantidad de paquetes con errores, donde la distribución ya no se hace tan homogénea como para el caso de diez nodos. Esto ocurre dado que por las colisiones y el orden arbitrario del simulador \OMNET, donde algunos nodos pertenecientes a determinados \gls{sf} (en este caso particular, el \gls{sf}\num{8}), poseen oportunidades más recurrentes de transmisión que otros, por lo que genera de que algunos \gls{sf} posean una cantidad menor del \SI{1}{\percent}, lo que es esperable, como también que en otros casos, supera el \SI{1}{\percent}. Este evento es debido a que al momento de tomar el estado de la simulación, esta función no terminaba de acomodar el índice de recepción de datos con error al \SI{1}{\percent}, ya que la función que calcula éste índice, a medida que llegan paquetes de forma íntegra al \gls{sf}, este aumenta un contador de envíos recibidos, por lo que al calcular el porcentaje de recepciones con error, este comienza a disminuir de forma paulatina, hasta que disminuye bajo el valor asignado de \gls{per}. Cuando esto ocurre, la función desecha el siguiente paquete en el \gls{sf}, aumentando con esto en uno el contador de recepciones con error y por consecuencia el índice \gls{per}, donde nuevamente sigue calculando de forma cíclica hasta que el porcentaje disminuye hasta el valor asignado al \gls{per}.\newpage \noindent Este evento al no presentarse en todos los \gls{sf} por igual, no se atribuye una falla de diseño, o una falla del simulador, por lo que se presenta como anomalía que depende del tiempo cuando es detenida la simulación al momento de tomar datos estadísticos que representen el comportamiento de los dispositivos.\\
@@ -306,7 +306,7 @@ Este evento anómalo ocurre de forma análoga para la incongruencia en las colis
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=13cm,height=30cm,keepaspectratio]{images/errores100nodos.eps}
-\caption{Gráfico de cantidad de paquetes con errores en cada \gls{sf} en la simulación, para 100 nodos. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:4}}}
+\caption{Gráfico de cantidad de paquetes con errores en cada \glsentryname{sf} en la simulación, para 100 nodos. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:4}}}
 \label{prueba:5}
 \end{figure}
 \end{justify}

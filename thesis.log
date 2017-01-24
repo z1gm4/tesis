@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  24 JAN 2017 08:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.11)  24 JAN 2017 10:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2947,14 +2947,14 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 20.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 20.
- <images/estadoarte1.png, id=564, 702.625pt x 551.05875pt>
+ <images/estadoarte1.png, id=557, 702.625pt x 551.05875pt>
 File: images/estadoarte1.png Graphic file (type png)
 
 <use images/estadoarte1.png>
 Package pdftex.def Info: images/estadoarte1.png used on input line 24.
 (pdftex.def)             Requested size: 281.04501pt x 220.41959pt.
 
-<images/estadoarte2.png, id=567, 437.635pt x 412.54124pt>
+<images/estadoarte2.png, id=560, 437.635pt x 412.54124pt>
 File: images/estadoarte2.png Graphic file (type png)
 
 <use images/estadoarte2.png>
@@ -3244,7 +3244,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 6.
 
-<images/alohamsg.png, id=665, 652.4375pt x 196.735pt>
+<images/alohamsg.png, id=658, 652.4375pt x 196.735pt>
 File: images/alohamsg.png Graphic file (type png)
 
 <use images/alohamsg.png>
@@ -3432,7 +3432,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 32.
 
-<images/LoRa-message-formats.jpg, id=722, 729.72626pt x 347.2975pt>
+<images/LoRa-message-formats.jpg, id=714, 729.72626pt x 347.2975pt>
 File: images/LoRa-message-formats.jpg Graphic file (type jpg)
 
 <use images/LoRa-message-formats.jpg>
@@ -3769,7 +3769,7 @@ s-converted-to.pdf diagramas/redminimalora.eps>
 (epstopdf)             \includegraphics on input line 46.
 Package epstopdf Info: Output file is already uptodate.
 
-<diagramas/redminimalora-eps-converted-to.pdf, id=792, 621.32124pt x 521.95pt>
+<diagramas/redminimalora-eps-converted-to.pdf, id=782, 621.32124pt x 521.95pt>
 File: diagramas/redminimalora-eps-converted-to.pdf Graphic file (type pdf)
 
 <use diagramas/redminimalora-eps-converted-to.pdf>
@@ -3881,7 +3881,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 66.
  [34]
-<diagramas/pair.png, id=816, 408.52625pt x 424.58624pt>
+<diagramas/pair.png, id=806, 408.52625pt x 424.58624pt>
 File: diagramas/pair.png Graphic file (type png)
 
 <use diagramas/pair.png>
@@ -3931,7 +3931,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-<diagramas/transmit.png, id=824, 408.52625pt x 424.58624pt>
+<diagramas/transmit.png, id=814, 408.52625pt x 424.58624pt>
 File: diagramas/transmit.png Graphic file (type png)
 
 <use diagramas/transmit.png>
@@ -3966,7 +3966,7 @@ Package babel Info: Redefining spanish shorthand "?
  [36
 
  <./diagramas/transmit.png>]
-<diagramas/retrans.png, id=832, 814.04124pt x 383.4325pt>
+<diagramas/retrans.png, id=821, 814.04124pt x 383.4325pt>
 File: diagramas/retrans.png Graphic file (type png)
 
 <use diagramas/retrans.png>
@@ -4296,7 +4296,7 @@ deal-eps-converted-to.pdf images/cambioestado1nodo-ideal.eps>
 (epstopdf)             \includegraphics on input line 216.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/cambioestado1nodo-ideal-eps-converted-to.pdf, id=899, 1414.28375pt x 58
+<images/cambioestado1nodo-ideal-eps-converted-to.pdf, id=887, 1414.28375pt x 58
 9.20125pt>
 File: images/cambioestado1nodo-ideal-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -4321,7 +4321,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 224.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/cambioestado10nodos-eps-converted-to.pdf, id=903, 1414.28375pt x 589.20
+<images/cambioestado10nodos-eps-converted-to.pdf, id=891, 1414.28375pt x 589.20
 125pt>
 File: images/cambioestado10nodos-eps-converted-to.pdf Graphic file (type pdf)
  <use images/cambioestado10nodos-eps-converted-to.pdf>
@@ -4399,7 +4399,7 @@ s-eps-converted-to.pdf images/cambioestado100nodos.eps>
 (epstopdf)             \includegraphics on input line 232.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/cambioestado100nodos-eps-converted-to.pdf, id=919, 1825.82124pt x 827.0
+<images/cambioestado100nodos-eps-converted-to.pdf, id=907, 1825.82124pt x 827.0
 9pt>
 File: images/cambioestado100nodos-eps-converted-to.pdf Graphic file (type pdf)
  <use images/cambioestado100nodos-eps-converted-to.pdf>
@@ -4495,7 +4495,7 @@ ps-converted-to.pdf images/colisiones10nodos.eps>
 (epstopdf)             \includegraphics on input line 244.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/colisiones10nodos-eps-converted-to.pdf, id=944, 1414.28375pt x 606.265p
+<images/colisiones10nodos-eps-converted-to.pdf, id=931, 1414.28375pt x 606.265p
 t>
 File: images/colisiones10nodos-eps-converted-to.pdf Graphic file (type pdf)
  <use images/colisiones10nodos-eps-converted-to.pdf>
@@ -4519,7 +4519,7 @@ eps-converted-to.pdf images/colisiones100nodos.eps>
 (epstopdf)             \includegraphics on input line 253.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/colisiones100nodos-eps-converted-to.pdf, id=964, 1414.28375pt x 606.265
+<images/colisiones100nodos-eps-converted-to.pdf, id=949, 1414.28375pt x 606.265
 pt>
 File: images/colisiones100nodos-eps-converted-to.pdf Graphic file (type pdf)
  <use images/colisiones100nodos-eps-converted-to.pdf>
@@ -4716,7 +4716,7 @@ converted-to.pdf images/errores10nodos.eps>
 (epstopdf)             \includegraphics on input line 298.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/errores10nodos-eps-converted-to.pdf, id=1027, 1414.28375pt x 589.20125p
+<images/errores10nodos-eps-converted-to.pdf, id=1009, 1414.28375pt x 589.20125p
 t>
 File: images/errores10nodos-eps-converted-to.pdf Graphic file (type pdf)
  <use images/errores10nodos-eps-converted-to.pdf>
@@ -4794,7 +4794,7 @@ f>
 (epstopdf)             \includegraphics on input line 308.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/errores100nodos-eps-converted-to.pdf, id=1054, 1414.28375pt x 589.20125
+<images/errores100nodos-eps-converted-to.pdf, id=1033, 1414.28375pt x 589.20125
 pt>
 File: images/errores100nodos-eps-converted-to.pdf Graphic file (type pdf)
  <use images/errores100nodos-eps-converted-to.pdf>
@@ -5833,12 +5833,12 @@ LaTeX Info: Redefining \% on input line 30.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7744F917662ACEE54E13DBAB82B87901;3616.
+(rerunfilecheck)             Checksum: 4B6EA03133F7F9A519486FEC15E9C662;3616.
  ) 
 Here is how much of TeX's memory you used:
  40763 strings out of 494850
  750253 string characters out of 6178023
- 1354583 words of memory out of 5000000
+ 1354594 words of memory out of 5000000
  43039 multiletter control sequences out of 15000+600000
  101001 words of font info for 62 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
@@ -5859,10 +5859,10 @@ share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on thesis.pdf (98 pages, 2082198 bytes).
+Output written on thesis.pdf (98 pages, 2082134 bytes).
 PDF statistics:
- 1554 PDF objects out of 1728 (max. 8388607)
- 1377 compressed objects within 14 object streams
+ 1532 PDF objects out of 1728 (max. 8388607)
+ 1362 compressed objects within 14 object streams
  306 named destinations out of 1000 (max. 500000)
  480 words of extra memory for PDF output out of 10000 (max. 10000000)
 

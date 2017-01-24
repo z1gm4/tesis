@@ -28,7 +28,7 @@ SF11 & $440bps$ & $11km$ & $740ms$ \\ \hline
 SF12 & $290bps$ & $14km$ & $1400ms$ \\ 
 \hline
 \end{tabular}
-\caption{Asignación de valores para los diferentes \gls{sf}.}
+\caption{Asignación de valores para los diferentes \glsentryname{sf}.}
 \label{tab:par}
 \end{table}
 \subsection{Arquitectura de red}
@@ -115,7 +115,7 @@ Gracias a modificaciones realizadas al script de SemTech, ahora es posible la ob
 En cuanto a llevar a cabo la retransmisión hacia redes externas de los paquetes LoRaWAN, hace falta generar una conexión puente que comparta salida a Internet al \textit{gateway} LoRa, esto se logra a través del uso de iptables u otro gestor de reglas de conexiones entrantes y salientes. Y luego mediante el uso de \glspl{socket} en C realizar la conexión hacia una base de datos o aplicación web, para luego procesar dichos datos y finalmente ser mostrados en algún front-end o servicio web.
 \subsection{Funcionamiento}
 El funcionamiento de este módulo es el siguiente, una vez que el \textit{gateway} ya posee la capacidad de escuchar, se debe lanzar un ping en IPv6 desde la Raspberry que posee de back-end. Una vez realizado esto comenzará una transmisión de paquetes donde se capturará el \textit{payload} del mensaje de LoRaWAN y se mostrará por pantalla,  ``Manda'' y ``LLega'' dependiendo si el mensaje llega de forma íntegra o no al \textit{gateway} (la cantidad de bytes especificada en la configuración, debe ser la misma cantidad de bytes que los contenidos en el struct array), en dicha parte del código se implementó un \gls{socket} en C para comunicarse con una base de datos MySQL creada para la interacción con este módulo, dado que si es posible comunicarse con la base de datos y realizar consultas a la base de datos (insert-delete-update) será posible la comunicación con casi cualquier servicio web que admita conexiones desde clientes.\\
-En las Fig~\ref{anexc:1} y Fig~\ref{anexc:2}, se presenta el código que maneja los métodos que permiten enviar datos como la IP del \textit{gateway} (obtenida mediante la implementación de IPv6 sobre LoRaWAN~\cite{tomas}), junto con el \textit{payload} a una base de datos, que en este caso sería una base de datos local. De esta forma se puede visualizar cómo es posible generar una capa intermedia de comunicaciones para el envío de datos entre la red LoRa y un servicio web deseado.
+En el extracto de código~\ref{anexc:1}, se presenta el código que maneja los métodos que permiten enviar datos como la IP del \textit{gateway} (obtenida mediante la implementación de IPv6 sobre LoRaWAN~\cite{tomas}), junto con el \textit{payload} a una base de datos, que en este caso sería una base de datos local. De esta forma se puede visualizar cómo es posible generar una capa intermedia de comunicaciones para el envío de datos entre la red LoRa y un servicio web deseado.
 \subsection{Contribuciones}
 Gracias a la contribución de la implementación de IPv6 en LoRaWAN, y a los mensajes de depuración del script para que imprima por pantalla los estados de los mensajes tanto salientes como entrantes (sólo los que llegan íntegros), es posible extraer el \textit{payload} de los mensajes enviados por los nodos hacia el \textit{gateway} para luego poder enviarlo hacia afuera para su almacenamiento en una base de datos, o para análisis de los datos en alguna aplicación sea web o móvil. Esto da la capacidad a una red LoRa de ejecutar comandos MAC, como también el extraer los datos hacia una aplicación que analice y cense los datos obtenidos, entre otros posibles usos~\cite{tomas}.
 \subsection{Consideraciones}
@@ -164,7 +164,7 @@ Número de Host & \gls{sf} & Distancia a \textit{gateway} [Metros]\\
 10 & 12 & 14 \\
 \hline
 \end{tabular}
-\caption{Tabla con distribución de nodos en cada \gls{sf} para pruebas de simulación}
+\caption{Tabla con distribución de nodos en cada \glsentryname{sf} para pruebas de simulación}
 \label{tab:prueba}
 \end{table}
 
@@ -242,7 +242,7 @@ En la Fig~\ref{nodos:10}, se observa la cantidad de colisiones por cada \gls{sf}
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=13cm,height=30cm,keepaspectratio]{images/colisiones10nodos.eps}
-\caption{Gráfico de colisiones ocurridos entre los distintos \gls{sf}, para 10 nodos transmitiendo. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:1}}}
+\caption{Gráfico de colisiones ocurridos entre los distintos \glsentryname{sf}, para 10 nodos transmitiendo. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:1}}}
 \label{nodos:10}
 \end{figure}
 
@@ -251,7 +251,7 @@ La diferencia de valores entre \gls{sf} también es explicada por el hecho de qu
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=13cm,height=30cm,keepaspectratio]{images/colisiones100nodos.eps}
-\caption{Gráfico de colisiones ocurridos entre los distintos \gls{sf}, para 100 nodos transmitiendo. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:2}}}
+\caption{Gráfico de colisiones ocurridos entre los distintos \glsentryname{sf}, para 100 nodos transmitiendo. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:2}}}
 \label{nodos:100}
 \end{figure}
 \subsection{Pruebas de transmisión en ambiente real}
@@ -278,15 +278,15 @@ SF8 & 469 & 38 & \SI{91.9}{\percent}\\
 SF7 & 983 & 47 & \SI{95.2}{\percent}\\
 \hline
 \end{tabular}
-\caption{Tabla con resultados de pruebas de conectividad por \gls{sf}}
+\caption{Tabla con resultados de pruebas de conectividad por \glsentryname{sf}}
 \label{prueba:real}
 \end{table}
 \newpage \noindent
 Bajo este contexto, estos resultados sirvieron para el modelado de los dispositivos LoRa, dado que en un principio se definió que se dejaría un valor fijo de pérdida de paquetes para representar el estándar expuesto en las especificaciones de los desarrolladores de LoRa, sin embargo, estos resultados revelaron de que la variabilidad de resultados respecto a la recepción de datos, depende de tres factores principales: la potencia de transmisión, la sensibilidad de recepción y el uso del espectro expandido. En relación a estos antecedentes, se estableció de que se modelaría de forma dinámica la pérdida de paquetes, con el fin de adaptar el modelo de simulación a cualquier tipo de ambiente a simular, sin que este pierda similitud con el comportamiento real en los dispositivos.
 \subsection{Índice de pérdida de paquetes}
-En relación a las pruebas de transmisión realizadas con los dispositivos físicos, se alejan mucho de los resultados esperados, e incluso de los datos que otorga la especificación de LoRa. Esto es causado por la interferencia generada por la fuente de poder administrada a los dispositivos y una incorrecta forma de aislamiento de los conectores y partes conductoras de la placa. Adicionalmente, se considera de que que sea producto de la baja potencia de transmisión del \textit{gateway} (\SI{5}{dbm}), e incluso de la alta sensibilidad de la antena de transmisión (\SI{5}{dbi}) dado que esto la hace más permeable a interferencias ambientales propias de una universidad. Adicionalmente, se considera la baja altura a la que se colocó el \textit{gateway} (\SI{1.2}{\meter}), como un factor de interferencia en las mediciones, dado que a mayor altura, se   Por otra parte, todas las pruebas realizadas por investigadores, tanto las pruebas realizadas a la capacidad del canal, como a la capacidad de transmisión, los resultados arrojan que sus pruebas son muy satisfactorias dado que sus resultados, se apegan a las especificaciones técnicas entregadas por Semtech en condiciones dentro de las normas expuestas allí.\newpage \noindent 
+En relación a las pruebas de transmisión realizadas con los dispositivos físicos, se alejan mucho de los resultados esperados, e incluso de los datos que otorga la especificación de LoRa. Esto es causado por la interferencia generada por la fuente de poder administrada a los dispositivos y una incorrecta forma de aislamiento de los conectores y partes conductoras de la placa. Adicionalmente, se considera de que que sea producto de la baja potencia de transmisión del \textit{gateway} (\SI{5}{dbm}), e incluso de la alta sensibilidad de la antena de transmisión (\SI{5}{dbi}) dado que esto la hace más permeable a interferencias ambientales propias de una universidad. Adicionalmente, se considera la baja altura a la que se colocó el \textit{gateway} (\SI{1.2}{\meter}), como un factor negativo en las mediciones, dado que los dispositivos estuvieron a baja altura, estos pudieron ser afectados por radiación de electrodomésticos. Por otra parte, todas las pruebas realizadas por investigadores, tanto las pruebas realizadas a la capacidad del canal, como a la capacidad de transmisión, los resultados arrojan que sus pruebas son muy satisfactorias dado que sus resultados, se apegan a las especificaciones técnicas entregadas por Semtech en condiciones dentro de las normas expuestas allí.\newpage \noindent 
 Dentro de las características de estas pruebas, se encuentra que los \textit{gateway} están ubicados a una altura de sobre los \SI{20}{\meter} en torres fijas, y equipados con antenas bi-cónicas con una sensibilidad de \SI{2}{dbi}, y transmitiendo a una potencia de (\SI{14}{dbm}), lo que permite una transmisión a mucha más distancia que el mismo \textit{gateway} a una menor altura, donde la calidad de transmisión puede verse mermada por las interferencias a ese nivel de altura, agregando a este análisis, de que las antenas utilizadas en los experimentos expuestos en los artículos citados, están diseñadas para la comunicación direccional en sus dos polos, lo que aumenta el nivel de emisión y recepción en estas direcciones, a diferencia de la omni direccional que se utilizó para estas mediciones, que posee un mayor nivel de pérdida en ciertos polos~\cite{Xavier}~\cite{Juha}~\cite{NORMAN}.\\
-De acuerdo a este contexto, se decidió adoptar el porcentaje de pérdida de paquetes que entregan las distintas mediciones realizadas por otros investigadores (Tasa de pérdida de paquetes = \SI{1}{\percent}), se asemejan más a la norma y a las especificaciones ~\cite{Xavier}~\cite{Juha}.
+De acuerdo a este contexto, se decidió adoptar el porcentaje de pérdida de paquetes que entregan las distintas mediciones realizadas por otros investigadores (tasa de pérdida de paquetes = \SI{1}{\percent}), se asemejan más a la norma y a las especificaciones~\cite{Xavier}~\cite{Juha}.
 
 \subsection{Resultados obtenidos agregando pérdida de paquetes}
 Dentro de las pruebas de transmisión en el ambiente virtual, también se registró la cantidad de paquetes con errores (que no llegaron a destino), los que en un ambiente real pueden tener el carácter de interferencia. Para el modelo de simulación el porcentaje de pérdida en la recepción de datos, se mide en cada transmisión en base al \gls{per} ingresado, junto a la cantidad de paquetes recibidos por cada \gls{sf}, por lo que dependiendo de que \gls{sf} posea más envíos efectivos de mensajes (en el caso de que uno haya entrado antes al estado de transmisión que otro nodo).\\
@@ -296,17 +296,17 @@ Estos resultados al ser satisfactorios demuestran de que, con diez nodos, la fun
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=13cm,height=30cm,keepaspectratio]{images/errores10nodos.eps}
-\caption{Gráfico de cantidad de paquetes con errores en cada \gls{sf} en la simulación, para 10 nodos. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:3}}}
+\caption{Gráfico de cantidad de paquetes con errores en cada \glsentryname{sf} en la simulación, para 10 nodos. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:3}}}
 \label{prueba:4}
 \end{figure}\newpage \noindent
-Sin embargo, en la Fig~\ref{prueba:5}, se evidencia un aumento considerable en la cantidad de paquetes con errores, donde la distribución ya no se hace tan homogénea como para el caso de diez nodos. Esto ocurre dado que por las colisiones y el orden arbitrario del simulador \OMNET, donde algunos nodos pertenecientes a determinados \gls{sf} (en este caso particular, el \gls{sf}\num{8}), poseen oportunidades más recurrentes de transmisión que otros, por lo que genera de que algunos \gls{sf} posean una cantidad menor del \SI{1}{\percent}, lo que es esperable, como también que en otros casos, supera el \SI{1}{\percent}. Este evento es debido a que al momento de tomar el estado de la simulación, esta función no terminaba de acomodar el índice de recepción de datos con error al \SI{1}{\percent}, ya que la función que calcula éste índice, a medida que llegan paquetes de forma íntegra al \gls{sf}, este aumenta un contador de envíos recibidos, por lo que al calcular el porcentaje de recepciones con error, este comienza a disminuir de forma paulatina, hasta que disminuye bajo el valor asignado de \gls{per}. Cuando esto ocurre, la función desecha el siguiente paquete en el \gls{sf} , aumentando con esto en uno el contador de recepciones con error y por consecuencia el índice \gls{per}, donde nuevamente sigue calculando de forma cíclica hasta que el porcentaje disminuye hasta el valor asignado al \gls{per}.\newpage \noindent Este evento al no presentarse en todos los \gls{sf} por igual, no se atribuye una falla de diseño, o una falla del simulador, por lo que se presenta como anomalía que depende del tiempo cuando es detenida la simulación al momento de tomar datos estadísticos que representen el comportamiento de los dispositivos.\\
+Sin embargo, en la Fig~\ref{prueba:5}, se evidencia un aumento considerable en la cantidad de paquetes con errores, donde la distribución ya no se hace tan homogénea como para el caso de diez nodos. Esto ocurre dado que por las colisiones y el orden arbitrario del simulador \OMNET, donde algunos nodos pertenecientes a determinados \gls{sf} (en este caso particular, el \gls{sf}\num{8}), poseen oportunidades más recurrentes de transmisión que otros, por lo que genera de que algunos \gls{sf} posean una cantidad menor del \SI{1}{\percent}, lo que es esperable, como también que en otros casos, supera el \SI{1}{\percent}. Este evento es debido a que al momento de tomar el estado de la simulación, esta función no terminaba de acomodar el índice de recepción de datos con error al \SI{1}{\percent}, ya que la función que calcula éste índice, a medida que llegan paquetes de forma íntegra al \gls{sf}, este aumenta un contador de envíos recibidos, por lo que al calcular el porcentaje de recepciones con error, este comienza a disminuir de forma paulatina, hasta que disminuye bajo el valor asignado de \gls{per}. Cuando esto ocurre, la función desecha el siguiente paquete en el \gls{sf}, aumentando con esto en uno el contador de recepciones con error y por consecuencia el índice \gls{per}, donde nuevamente sigue calculando de forma cíclica hasta que el porcentaje disminuye hasta el valor asignado al \gls{per}.\newpage \noindent Este evento al no presentarse en todos los \gls{sf} por igual, no se atribuye una falla de diseño, o una falla del simulador, por lo que se presenta como anomalía que depende del tiempo cuando es detenida la simulación al momento de tomar datos estadísticos que representen el comportamiento de los dispositivos.\\
 Este evento anómalo ocurre de forma análoga para la incongruencia en las colisiones para 100 nodos.
 
 \noindent
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=13cm,height=30cm,keepaspectratio]{images/errores100nodos.eps}
-\caption{Gráfico de cantidad de paquetes con errores en cada \gls{sf} en la simulación, para 100 nodos. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:4}}}
+\caption{Gráfico de cantidad de paquetes con errores en cada \glsentryname{sf} en la simulación, para 100 nodos. \textit{Esta imagen puede verse ampliada en el Anexo~\ref{anexb:4}}}
 \label{prueba:5}
 \end{figure}
 \end{justify}

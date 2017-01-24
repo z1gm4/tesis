@@ -39,13 +39,13 @@
 \contentsline {subsection}{\numberline {4.4.1}Pruebas realizadas}{43}{subsection.4.4.1}
 \contentsline {section}{\numberline {4.5}An\IeC {\'a}lisis de resultados}{44}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Cambios de estado}{44}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Pruebas de transmisi\IeC {\'o}n en ambiente virtual}{47}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.2}Pruebas de transmisi\IeC {\'o}n en ambiente virtual}{46}{subsection.4.5.2}
 \contentsline {subsection}{\numberline {4.5.3}Pruebas de transmisi\IeC {\'o}n en ambiente real}{49}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}\IeC {\'I}ndice de p\IeC {\'e}rdida de paquetes}{52}{subsection.4.5.4}
-\contentsline {subsection}{\numberline {4.5.5}Resultados obtenidos agregando p\IeC {\'e}rdida de paquetes}{53}{subsection.4.5.5}
-\contentsline {chapter}{Cap\'{i}tulo 5.\ Conclusiones}{57}{chapter.5}
-\contentsline {chapter}{Siglas}{63}{section*.32}
-\contentsline {chapter}{Glosario}{65}{section*.34}
-\contentsline {chapter}{Anexo A.\ Anexo A}{69}{appendix.Alph1}
-\contentsline {chapter}{Anexo B.\ Anexo B}{73}{appendix.Alph2}
-\contentsline {chapter}{Anexo C.\ Anexo C}{79}{appendix.Alph3}
+\contentsline {subsection}{\numberline {4.5.4}\IeC {\'I}ndice de p\IeC {\'e}rdida de paquetes}{51}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.5}Resultados obtenidos agregando p\IeC {\'e}rdida de paquetes}{52}{subsection.4.5.5}
+\contentsline {chapter}{Cap\'{i}tulo 5.\ Conclusiones}{55}{chapter.5}
+\contentsline {chapter}{Siglas}{61}{section*.32}
+\contentsline {chapter}{Glosario}{63}{section*.34}
+\contentsline {chapter}{Anexo A.\ Anexo A}{67}{appendix.Alph1}
+\contentsline {chapter}{Anexo B.\ Anexo B}{71}{appendix.Alph2}
+\contentsline {chapter}{Anexo C.\ Anexo C}{77}{appendix.Alph3}

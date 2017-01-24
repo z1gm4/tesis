@@ -21,13 +21,6 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{Xavier}
-\BIBentryALTinterwordspacing
-{Xavier Vilajosana,Pere Tuset-Peiro,Borja Martínez}. (2016, Jul.)
-  Understanding the limits of lorawan. [Online]. Available:
-  \url{https://www.researchgate.net/publication/305683193_Understanding_the_limits_of_LoRaWAN}
-\BIBentrySTDinterwordspacing
-
 \bibitem{Juha}
 \BIBentryALTinterwordspacing
 {Juha Petäjäjärvi, Konstantin Mikhaylov, Antti Roivainen, Tuomo
@@ -44,6 +37,13 @@
   O.Hersent (Actility)}. (2015, Jan.) Lorawan specification. Semtech. [Online].
   Available:
   \url{https://www.lora-alliance.org/portals/0/specs/LoRaWAN%20Specification%201R0.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Xavier}
+\BIBentryALTinterwordspacing
+{Xavier Vilajosana,Pere Tuset-Peiro,Borja Martínez}. (2016, Jul.)
+  Understanding the limits of lorawan. [Online]. Available:
+  \url{https://www.researchgate.net/publication/305683193_Understanding_the_limits_of_LoRaWAN}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Omnet++}
@@ -134,6 +134,24 @@
 {inteliLIGHT}, ``intelilight lora™ streetlight control solution successfully
   passes field trials in szada, hungary,'' 2016. [Online]. Available:
   \url{https://www.lora-alliance.org/portals/0/documents/whitepapers/inteliLIGHT_LoRa_-_Szada_Case_Study.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{bugtrack}
+\BIBentryALTinterwordspacing
+Bugzilla. (2017) {Buglist of NS-3}. [Online]. Available:
+  \url{https://www.nsnam.org/bugzilla/buglist.cgi?order=changeddate%20DESC%2Cshort_desc%20DESC%2Cbug_id&query_based_on=&query_format=advanced&remaction=}
+\BIBentrySTDinterwordspacing
+
+\bibitem{bugtrack2}
+\BIBentryALTinterwordspacing
+{MantisBT Team}. (2017) {Buglist of \OMNET}. [Online]. Available:
+  \url{https://dev.omnetpp.org/bugs/view_all_bug_page.php}
+\BIBentrySTDinterwordspacing
+
+\bibitem{script}
+\BIBentryALTinterwordspacing
+{SemTech}. (2013) {LoRa gateway}. [Online]. Available:
+  \url{https://github.com/Lora-net/lora_gateway}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

@@ -2,7 +2,9 @@
 \contentsline {table}{\numberline {2.1}{\ignorespaces Cantidad de paquetes transmitidos, recibidos y p\IeC {\'e}rdida de paquetes por rango de distancia en medici\IeC {\'o}n hecha por nodo sobre auto. Fuente:\cite {Juha}\relax }}{13}{table.caption.9}
 \contentsline {table}{\numberline {2.2}{\ignorespaces Cantidad de paquetes transmitidos, recibidos y p\IeC {\'e}rdida de paquetes por rango de distancia en medici\IeC {\'o}n hecha por nodo sobre bote. Fuente:\cite {Juha}\relax }}{14}{table.caption.10}
 \contentsline {table}{\numberline {3.1}{\ignorespaces Glosario de campos de mensajes LoRa\relax }}{25}{table.caption.13}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Asignaci\IeC {\'o}n de Valores para los diferentes \gls {sf}\relax }}{32}{table.caption.16}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Formato de mensaje, campo cabecera MAC. Fuente:~\cite {Sornin}\relax }}{26}{table.caption.14}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Formato de mensaje, campo cabecera de trama. Fuente:~\cite {Sornin}\relax }}{26}{table.caption.15}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Asignaci\IeC {\'o}n de valores para los diferentes \gls {sf}.\relax }}{32}{table.caption.16}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Tabla con distribuci\IeC {\'o}n de nodos en cada \gls {sf} para pruebas de simulaci\IeC {\'o}n\relax }}{43}{table.caption.21}
 \contentsline {table}{\numberline {4.3}{\ignorespaces Tabla con relaci\IeC {\'o}n de indicador de estado y la etapa alcanzada por cada nodo en la simulaci\IeC {\'o}n\relax }}{43}{table.caption.22}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Tabla con resultados de pruebas de conectividad por \gls {sf}\relax }}{50}{table.caption.28}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Tabla con resultados de pruebas de conectividad por \gls {sf}\relax }}{51}{table.caption.28}

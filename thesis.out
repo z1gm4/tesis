@@ -13,11 +13,11 @@
 \BOOKMARK [1][-]{section.2.3}{Modelado de redes ALOHA}{chapter.2}% 13
 \BOOKMARK [1][-]{section.2.4}{Integraci\363n de IoT en LoRaWAN}{chapter.2}% 14
 \BOOKMARK [1][-]{section.2.5}{M\351todos de programaci\363n en C orientado a redes.}{chapter.2}% 15
-\BOOKMARK [0][-]{chapter.3}{Cap\355tulo 3. Marco Te\363rico}{}% 16
+\BOOKMARK [0][-]{chapter.3}{Cap\355tulo 3. Marco te\363rico}{}% 16
 \BOOKMARK [1][-]{section.3.1}{ALOHAnet}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.2}{Spreading Spectrum}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{Spreading spectrum}{chapter.3}% 18
 \BOOKMARK [1][-]{section.3.3}{Dispositivos LoRa}{chapter.3}% 19
-\BOOKMARK [2][-]{subsection.3.3.1}{Formato de Mensaje LoRa}{section.3.3}% 20
+\BOOKMARK [2][-]{subsection.3.3.1}{Formato de mensaje LoRa}{section.3.3}% 20
 \BOOKMARK [1][-]{section.3.4}{Diferencias entre LoRaWAN y ALOHAnet}{chapter.3}% 21
 \BOOKMARK [1][-]{section.3.5}{Simulaci\363n por eventos discretos}{chapter.3}% 22
 \BOOKMARK [1][-]{section.3.6}{Herramientas para simulaci\363n de redes}{chapter.3}% 23
@@ -25,24 +25,25 @@
 \BOOKMARK [1][-]{section.4.1}{Definici\363n de variables y par\341metros}{chapter.4}% 25
 \BOOKMARK [2][-]{subsection.4.1.1}{Arquitectura de red}{section.4.1}% 26
 \BOOKMARK [1][-]{section.4.2}{Definici\363n de fases de transmisi\363n en LoraWAN}{chapter.4}% 27
-\BOOKMARK [2][-]{subsection.4.2.1}{Fase de transmisi\363n}{section.4.2}% 28
-\BOOKMARK [2][-]{subsection.4.2.2}{Fase de reposo}{section.4.2}% 29
-\BOOKMARK [2][-]{subsection.4.2.3}{P\351rdida de paquetes}{section.4.2}% 30
-\BOOKMARK [1][-]{section.4.3}{M\363dulo de Transici\363n LoRaWAN/IPv6}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.3.1}{Funcionamiento}{section.4.3}% 32
-\BOOKMARK [2][-]{subsection.4.3.2}{Contribuciones}{section.4.3}% 33
-\BOOKMARK [2][-]{subsection.4.3.3}{Consideraciones}{section.4.3}% 34
-\BOOKMARK [1][-]{section.4.4}{Par\341metros y variables en mediciones}{chapter.4}% 35
-\BOOKMARK [2][-]{subsection.4.4.1}{Pruebas Realizadas}{section.4.4}% 36
-\BOOKMARK [1][-]{section.4.5}{An\341lisis de resultados}{chapter.4}% 37
-\BOOKMARK [2][-]{subsection.4.5.1}{Cambios de estado}{section.4.5}% 38
-\BOOKMARK [2][-]{subsection.4.5.2}{Pruebas de transmisi\363n en ambiente virtual}{section.4.5}% 39
-\BOOKMARK [2][-]{subsection.4.5.3}{Pruebas de transmisi\363n en ambiente real}{section.4.5}% 40
-\BOOKMARK [2][-]{subsection.4.5.4}{\315ndice de p\351rdida de paquetes}{section.4.5}% 41
-\BOOKMARK [2][-]{subsection.4.5.5}{Resultados obtenidos agregando p\351rdida de paquetes}{section.4.5}% 42
-\BOOKMARK [0][-]{chapter.5}{Cap\355tulo 5. Conclusiones}{}% 43
-\BOOKMARK [0][-]{section*.32}{Siglas}{}% 44
-\BOOKMARK [0][-]{section*.34}{Glosario}{}% 45
-\BOOKMARK [0][-]{appendix.Alph1}{Anexo A. Anexo A}{}% 46
-\BOOKMARK [0][-]{appendix.Alph2}{Anexo B. Anexo B}{}% 47
-\BOOKMARK [0][-]{appendix.Alph3}{Anexo C. Anexo C}{}% 48
+\BOOKMARK [2][-]{subsection.4.2.1}{Fase de emparejamiento}{section.4.2}% 28
+\BOOKMARK [2][-]{subsection.4.2.2}{Fase de transmisi\363n}{section.4.2}% 29
+\BOOKMARK [2][-]{subsection.4.2.3}{Fase de reposo}{section.4.2}% 30
+\BOOKMARK [2][-]{subsection.4.2.4}{P\351rdida de paquetes}{section.4.2}% 31
+\BOOKMARK [1][-]{section.4.3}{M\363dulo de transici\363n LoRaWAN/IPv6}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.3.1}{Funcionamiento}{section.4.3}% 33
+\BOOKMARK [2][-]{subsection.4.3.2}{Contribuciones}{section.4.3}% 34
+\BOOKMARK [2][-]{subsection.4.3.3}{Consideraciones}{section.4.3}% 35
+\BOOKMARK [1][-]{section.4.4}{Par\341metros y variables de mediciones}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.4.1}{Pruebas realizadas}{section.4.4}% 37
+\BOOKMARK [1][-]{section.4.5}{An\341lisis de resultados}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.5.1}{Cambios de estado}{section.4.5}% 39
+\BOOKMARK [2][-]{subsection.4.5.2}{Pruebas de transmisi\363n en ambiente virtual}{section.4.5}% 40
+\BOOKMARK [2][-]{subsection.4.5.3}{Pruebas de transmisi\363n en ambiente real}{section.4.5}% 41
+\BOOKMARK [2][-]{subsection.4.5.4}{\315ndice de p\351rdida de paquetes}{section.4.5}% 42
+\BOOKMARK [2][-]{subsection.4.5.5}{Resultados obtenidos agregando p\351rdida de paquetes}{section.4.5}% 43
+\BOOKMARK [0][-]{chapter.5}{Cap\355tulo 5. Conclusiones}{}% 44
+\BOOKMARK [0][-]{section*.32}{Siglas}{}% 45
+\BOOKMARK [0][-]{section*.34}{Glosario}{}% 46
+\BOOKMARK [0][-]{appendix.Alph1}{Anexo A. Anexo A}{}% 47
+\BOOKMARK [0][-]{appendix.Alph2}{Anexo B. Anexo B}{}% 48
+\BOOKMARK [0][-]{appendix.Alph3}{Anexo C. Anexo C}{}% 49

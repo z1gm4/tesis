@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 10.01.2017  04:17:35
-;; Indexstyle: "/tmp/NVeg96P7Lm", Rawindex: "/tmp/RJfuWknEdQ", Output: "thesis.acr"
+;; at 24.01.2017  01:20:51
+;; Indexstyle: "/tmp/8hNdsxctbG", Rawindex: "/tmp/_GFjIsIdIy", Output: "thesis.acr"
 
 
 Building indexentry-tree:
@@ -18,7 +18,7 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 
 Forming letter-groups:
-Letter-group: "´¨ÐÚ—¼ „—œÃË— Ú€´®" -> "L"
+Letter-group: "´„Ú" -> "L"
 Letter-group: "€†®" -> "A"
 Letter-group: "€È¨" -> "A"
 Letter-group: "Úà¼" -> "T"
@@ -33,7 +33,7 @@ Letter-group: "€†®" -> "A"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "¨ÃÚ" -> "I"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-Letter-group: "´¨ÐÚ—¼ „—œÃË— Ú€´®" -> "L"
+Letter-group: "´„Ú" -> "L"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "È—Ë" -> "P"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)

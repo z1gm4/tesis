@@ -1,0 +1,7 @@
+\frametitle{Preguntas}
+\begin{figure}
+\begin{overprint}
+\onslide<1>\centering\includegraphics[scale=0.3]{imagenes/los}\caption{Imagen que representa comunicación por Línea de Vista}
+\onslide<2>\centering\includegraphics[scale=0.4]{imagenes/msg}\caption{Imagen que representa estructura de mensaje en protocolo LoRaWAN}
+\end{overprint}
+\end{figure}
